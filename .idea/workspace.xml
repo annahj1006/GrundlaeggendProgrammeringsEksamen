@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="New classes 3">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" afterDir="false" />
+    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="New classes 4">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlaypageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bruger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/TVshow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TVshow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669286424256</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New classes 4">
+      <created>1669286792859</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669286792859</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +109,7 @@
     <MESSAGE value="New classes" />
     <MESSAGE value="New classes 2" />
     <MESSAGE value="New classes 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="New classes 3" />
+    <MESSAGE value="New classes 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="New classes 4" />
   </component>
 </project>
