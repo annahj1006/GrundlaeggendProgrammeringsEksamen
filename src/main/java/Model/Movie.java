@@ -1,4 +1,4 @@
 package Model;
 
-public class Movie {
+public class Movie extends Media{
 }

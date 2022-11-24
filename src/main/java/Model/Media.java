@@ -1,4 +1,4 @@
 package Model;
 
-public class Media {
+public class Media{
 }
