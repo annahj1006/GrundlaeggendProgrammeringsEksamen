@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="New classes 2" />
+    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="New classes 3">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -64,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669286234377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New classes 3">
+      <created>1669286424256</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669286424256</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +94,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New classes" />
     <MESSAGE value="New classes 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="New classes 2" />
+    <MESSAGE value="New classes 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="New classes 3" />
   </component>
 </project>
