@@ -1,4 +1,5 @@
 # GrundlaeggendProgrammeringsEksamen
 
 Projekt
-Everyone was here
+Everyone was here.
+How about no?
