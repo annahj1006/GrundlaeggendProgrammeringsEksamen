@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="number 9">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Udklip.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Udklipk.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Udklipp.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/default-avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/download.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Pages design" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669297681832</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Pages design">
+      <created>1669298199377</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669298199377</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +190,7 @@
     <MESSAGE value="number 7" />
     <MESSAGE value="redigeret i datafil" />
     <MESSAGE value="number 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="number 9" />
+    <MESSAGE value="Pages design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pages design" />
   </component>
 </project>
