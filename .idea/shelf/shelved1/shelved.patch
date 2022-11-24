@@ -1,0 +1,200 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d389b244-83c4-405a-886a-27dadf4f36e6\" name=\"Changes\" comment=\"number 7\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"FxmlFile\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2HzMrhl9Qa8LZVsxGKOFvc1wbOG\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n      <recent name=\"com.example.grundlggendeprogrammeringeksamene\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d389b244-83c4-405a-886a-27dadf4f36e6\" name=\"Changes\" comment=\"\" />\r\n      <created>1669283660682</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1669283660682</updated>\r\n      <workItem from=\"1669283661970\" duration=\"2000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"New classes\">\r\n      <created>1669286127836</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669286127836</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"New classes 2\">\r\n      <created>1669286234377</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669286234377</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"New classes 3\">\r\n      <created>1669286424256</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669286424256</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"New classes 4\">\r\n      <created>1669286792859</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669286792859</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"New classes 5\">\r\n      <created>1669286914266</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669286914266</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"number 6\">\r\n      <created>1669287194876</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669287194876</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"number 7\">\r\n      <created>1669287414151</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669287414151</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"number 7\">\r\n      <created>1669287489938</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1669287489938</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New classes\" />\r\n    <MESSAGE value=\"New classes 2\" />\r\n    <MESSAGE value=\"New classes 3\" />\r\n    <MESSAGE value=\"New classes 4\" />\r\n    <MESSAGE value=\"New classes 5\" />\r\n    <MESSAGE value=\"number 6\" />\r\n    <MESSAGE value=\"number 7\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"number 7\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f3b606c41b7729828939a87032772e3f2618475e)
++++ b/.idea/workspace.xml	(date 1669296992772)
+@@ -4,8 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="number 7">
++    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="number 8">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -15,8 +17,8 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="Class" />
+         <option value="FxmlFile" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+@@ -109,7 +111,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1669287489938</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="number 8">
++      <created>1669293692437</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1669293692437</updated>
++    </task>
++    <task id="LOCAL-00010" summary="number 8">
++      <created>1669293724905</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1669293724905</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -134,6 +150,7 @@
+     <MESSAGE value="New classes 5" />
+     <MESSAGE value="number 6" />
+     <MESSAGE value="number 7" />
+-    <option name="LAST_COMMIT_MESSAGE" value="number 7" />
++    <MESSAGE value="number 8" />
++    <option name="LAST_COMMIT_MESSAGE" value="number 8" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/resources/LoginPage.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import java.lang.*?>\r\n<?import java.util.*?>\r\n<?import javafx.scene.*?>\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.layout.*?>\r\n\r\n<AnchorPane xmlns=\"http://javafx.com/javafx\"\r\n            xmlns:fx=\"http://javafx.com/fxml\"\r\n            fx:controller=\"LoginPage\"\r\n            prefHeight=\"400.0\" prefWidth=\"600.0\">\r\n\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/LoginPage.fxml b/src/main/resources/LoginPage.fxml
+--- a/src/main/resources/LoginPage.fxml	(revision f3b606c41b7729828939a87032772e3f2618475e)
++++ b/src/main/resources/LoginPage.fxml	(date 1669296807300)
+@@ -1,14 +1,44 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.AnchorPane?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="LoginPage"
+-            prefHeight="400.0" prefWidth="600.0">
+ 
++<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPage">
++   <children>
++      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="230.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/default-avatar.png" />
++         </image>
++      </ImageView>
++      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="420.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/default-avatar.png" />
++         </image>
++      </ImageView>
++      <ImageView fitHeight="211.0" fitWidth="252.0" layoutX="274.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/download.png" />
++         </image>
++      </ImageView>
++      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/Udklip.PNG" />
++         </image>
++      </ImageView>
++      <Button fx:id="AccountButtonLoginPage1" layoutX="226.0" layoutY="264.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="158.0" style="-fx-opacity: 0;" text="Account1" textFill="TRANSPARENT" />
++      <Button fx:id="AccountButtonLoginPage2" layoutX="416.0" layoutY="264.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="158.0" style="-fx-opacity: 0;" text="Account2" textFill="TRANSPARENT" />
++      <ImageView fitHeight="32.0" fitWidth="122.0" layoutX="250.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/Udklipk.PNG" />
++         </image>
++      </ImageView>
++      <ImageView fitHeight="32.0" fitWidth="83.0" layoutX="466.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/Udklipp.PNG" />
++         </image>
++      </ImageView>
++   </children>
+ </AnchorPane>
+Index: src/main/resources/HomePage.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import java.lang.*?>\r\n<?import java.util.*?>\r\n<?import javafx.scene.*?>\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.layout.*?>\r\n\r\n<AnchorPane xmlns=\"http://javafx.com/javafx\"\r\n            xmlns:fx=\"http://javafx.com/fxml\"\r\n            fx:controller=\"HomePage\"\r\n            prefHeight=\"400.0\" prefWidth=\"600.0\">\r\n\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/HomePage.fxml b/src/main/resources/HomePage.fxml
+--- a/src/main/resources/HomePage.fxml	(revision f3b606c41b7729828939a87032772e3f2618475e)
++++ b/src/main/resources/HomePage.fxml	(date 1669296882340)
+@@ -1,14 +1,51 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ 
+-<?import java.lang.*?>
+-<?import java.util.*?>
+-<?import javafx.scene.*?>
+-<?import javafx.scene.control.*?>
+-<?import javafx.scene.layout.*?>
++<?import javafx.scene.control.Button?>
++<?import javafx.scene.control.ButtonBar?>
++<?import javafx.scene.control.TextField?>
++<?import javafx.scene.image.Image?>
++<?import javafx.scene.image.ImageView?>
++<?import javafx.scene.layout.AnchorPane?>
++<?import javafx.scene.text.Font?>
+ 
+-<AnchorPane xmlns="http://javafx.com/javafx"
+-            xmlns:fx="http://javafx.com/fxml"
+-            fx:controller="HomePage"
+-            prefHeight="400.0" prefWidth="600.0">
+ 
++<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePage">
++   <children>
++      <ButtonBar layoutX="41.0" layoutY="28.0" prefHeight="34.0" prefWidth="280.0">
++        <buttons>
++          <Button fx:id="FilmButton" mnemonicParsing="false" style="-fx-background-color: #2e2e2e;" text="Film" textFill="WHITE">
++               <font>
++                  <Font name="Arial" size="14.0" />
++               </font>
++            </Button>
++            <Button fx:id="SerierButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #2e2e2e;" text="Serier" textFill="WHITE">
++               <font>
++                  <Font name="Arial" size="14.0" />
++               </font>
++            </Button>
++            <Button fx:id="GenreButton" mnemonicParsing="false" style="-fx-background-color: #2e2e2e;" text="Genre" textFill="WHITE">
++               <font>
++                  <Font name="Arial" size="14.0" />
++               </font>
++            </Button>
++            <Button fx:id="MinListeButton" mnemonicParsing="false" style="-fx-background-color: #2e2e2e;" text="Min liste" textFill="WHITE">
++               <font>
++                  <Font name="Arial" size="14.0" />
++               </font>
++            </Button>
++        </buttons>
++      </ButtonBar>
++      <TextField fx:id="SearchBar" layoutX="560.0" layoutY="32.0" prefHeight="26.0" prefWidth="179.0" text="Search" />
++      <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="745.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/default-avatar.png" />
++         </image>
++      </ImageView>
++      <ImageView fitHeight="83.0" fitWidth="113.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
++         <image>
++            <Image url="@../../../../../Google%20Drev/Desktop/download.png" />
++         </image>
++      </ImageView>
++      <Button fx:id="AccountButton" layoutX="744.0" layoutY="24.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Account" textFill="TRANSPARENT" />
++   </children>
+ </AnchorPane>
