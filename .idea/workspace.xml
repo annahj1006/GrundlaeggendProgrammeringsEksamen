@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Changes in MovieData">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/film.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/film.txt" afterDir="false" />
-    </list>
+    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Data upload" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669363229116</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Data upload">
+      <created>1669385541997</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669385541997</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +215,7 @@
     <MESSAGE value="number 9" />
     <MESSAGE value="Pages design" />
     <MESSAGE value="Changes in MovieData" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in MovieData" />
+    <MESSAGE value="Data upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data upload" />
   </component>
 </project>
