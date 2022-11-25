@@ -21,6 +21,7 @@ public class Media{
     public List<Movie> movies;
     public List<TVshow> tvShow;
 
+
     public Media(String dataPath, String imagePath) {
         daAccess = new MovieData(dataPath, imagePath);
         movies = new ArrayList<>();
@@ -28,31 +29,39 @@ public class Media{
     }
 
     public void instanziateMedia() {
-        for(String movieData : daAccess.loadData()) {
+        List<String> posters = daAccess.loadImageData();
+        List<String> media = daAccess.loadData();
+        int i = 0;
 
+        // Sorting our lists alphabetically
+        Collections.sort(posters);
+        Collections.sort(media, (p1, p2) -> p1.substring(0,p1.indexOf("; ")).compareTo(p2.substring(0,p2.indexOf("; "))));
+
+
+
+        for(String movieData : media) {
+
+            // Splitting our movie data and storing it in separate variables for easier readability
             String[] elements = movieData.split("; ");
             String title = elements[0];
+
             String releaseYear = elements[1];
             String genre = elements[2];
+            String poster = posters.get(i);
             String rating = elements[3].substring(0,elements[3].length());
 
+
+            // Making movies and tvshow objects and adding them to their separate lists
             if(elements.length == 4) {
-                movies.add(new Movie(title, releaseYear, genre, rating));
+
+                movies.add(new Movie(title, releaseYear, genre, rating, poster));
             } else if(elements.length == 5) {
                 String episodes = elements[4];
 
-                tvShow.add(new TVshow(title, releaseYear, genre, rating, episodes));
+                tvShow.add(new TVshow(title, releaseYear, genre, rating, poster, episodes));
             }
-        }
-        Collections.sort(movies, (p1, p2) -> p1.getName().compareTo(p2.getName()));
-
-        // skal sortere arraylisten med billeder
-        int i = 0;
-        for(String poster : daAccess.loadImageData()) {
-            movies.get(i).setImagePath(poster);
             i++;
         }
+
     }
-
-
 }

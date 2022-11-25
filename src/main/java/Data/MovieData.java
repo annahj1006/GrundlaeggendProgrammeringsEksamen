@@ -11,6 +11,7 @@ import javax.imageio.ImageIO;
 
 import java.io.FileNotFoundException;
 import java.io.File;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
@@ -46,20 +47,15 @@ public class MovieData {
     public List<String> loadImageData() {
         List<String> posters = new ArrayList<>();
         try {
-
-            File dir = new File("src/main/resources/Data/filmplakater");
+            File dir = new File(imagePath);
 
             for (final File f : dir.listFiles()) {
-
-                posters.add(f.getName());
-                //System.out.println("src/main/resources/Data/filmplakater/"+f.getName());
-
+                posters.add(f.getName().substring(0,f.getName().length()-4));
             }
-
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
         return posters;
     }
 }
