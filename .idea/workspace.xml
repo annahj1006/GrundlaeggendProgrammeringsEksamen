@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Changes in MovieData">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Media.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/film.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/film.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669327611232</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Changes in MovieData">
+      <created>1669363229115</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669363229116</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

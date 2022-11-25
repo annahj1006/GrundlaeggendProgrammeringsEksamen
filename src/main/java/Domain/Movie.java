@@ -1,18 +1,37 @@
 package Domain;
 
 import Domain.Media;
-import java.util.ArrayList;
-import java.util.List;
+
 public class Movie {
     protected String title;
-    protected int releaseYear;
-    protected List<String> genre;
-    protected double rating;
-    Movie(String title, int releaseYear, ArrayList<String> genre, double rating) {
+    protected String releaseYear;
+    protected String genre;
+    protected String rating;
+    protected String imagePath;
+    Movie(String title, String releaseYear, String genre, String rating) {
         this.title = title;
         this.releaseYear = releaseYear;
         this.genre = genre;
         this.rating = rating;
+    }
+
+    String getName() {
+        return title;
+    }
+    String getReleaseYear() {
+        return releaseYear;
+    }
+    String getGenre() {
+        return genre;
+    }
+    String getRating() {
+        return rating;
+    }
+    String getImagePath() {
+        return imagePath;
+    }
+    void setImagePath(String path) {
+        imagePath = path;
     }
 
 

@@ -23,13 +23,13 @@ public class MovieData {
             Scanner scan = new Scanner(new File(filePath));
 
             while (scan.hasNextLine()) {
+                System.out.println(scan.nextLine());
                 media.add(scan.nextLine());
             }
             scan.close();
         } catch (FileNotFoundException e) {
             System.out.println("No file found");
         }
-
         return media;
     }
 
