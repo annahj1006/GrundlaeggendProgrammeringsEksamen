@@ -37,4 +37,7 @@ public class TVshow {
         void setImagePath(String path) {
             imagePath = path;
         }
+        public String toString() {
+            return (getName() + " - " + getReleaseYear() + " - " + getGenre() + " - " + getRating() + " - " + getEpisodes());
+        }
 }

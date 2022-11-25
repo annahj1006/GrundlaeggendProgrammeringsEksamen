@@ -34,6 +34,9 @@ public class Movie {
         imagePath = path;
     }
 
+    public String toString() {
+        return (getName() + " - " + getReleaseYear() + " - " + getGenre() + " - " + getRating() + " - " + getImagePath());
+    }
 
 
 
