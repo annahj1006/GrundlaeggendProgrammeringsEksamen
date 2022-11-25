@@ -18,16 +18,16 @@ import Data.MovieData;
 
 public class Media{
     private final MovieData daAccess;
-    List<Movie> movies;
-    List<TVshow> tvShow;
+    public List<Movie> movies;
+    public List<TVshow> tvShow;
 
-    Media(String path) {
-        daAccess = new MovieData(path);
+    public Media(String dataPath, String imagePath) {
+        daAccess = new MovieData(dataPath, imagePath);
         movies = new ArrayList<>();
         tvShow = new ArrayList<>();
     }
 
-    private void insMedia() {
+    public void instanziateMedia() {
         for(String movieData : daAccess.loadData()) {
 
             String[] elements = movieData.split("; ");
@@ -44,45 +44,14 @@ public class Media{
                 tvShow.add(new TVshow(title, releaseYear, genre, rating, episodes));
             }
         }
+        Collections.sort(movies, (p1, p2) -> p1.getName().compareTo(p2.getName()));
 
-    }
-
-    public static void main(String[] args) throws Exception {
-        Media m = new Media("src/main/resources/Data/film.txt");
-        Media t = new Media("src/main/resources/Data/serier.txt");
-        m.insMedia();
-        t.insMedia();
-
-        Collections.sort(m.movies, (p1, p2) -> p1.getName().compareTo(p2.getName()));
-
-        File dir = new File("src/main/resources/Data/filmplakater");
-
-        for (final File f : dir.listFiles()) {
-            BufferedImage img = null;
-
-            img = ImageIO.read(f);
-
-            for(Movie movie : m.movies) {
-                String x = movie.getName()+".jpg";
-
-                if(x.equals(f.getName())) {
-                    movie.setImagePath("src/main/resources/Data/filmplakater/"+f.getName());
-                    break;
-                }
-            }
+        // skal sortere arraylisten med billeder
+        int i = 0;
+        for(String poster : daAccess.loadImageData()) {
+            movies.get(i).setImagePath(poster);
+            i++;
         }
-
-        for(Movie movie : m.movies) {
-            System.out.println(movie.toString());
-        }
-
-
-/*
-        for(TVshow tvshow : t.tvShow) {
-            System.out.println(tvshow.toString());
-        }
-        */
-
     }
 
 

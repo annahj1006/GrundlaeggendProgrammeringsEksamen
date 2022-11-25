@@ -15,22 +15,22 @@ public class Movie {
         this.rating = rating;
     }
 
-    String getName() {
+    public String getName() {
         return title;
     }
-    String getReleaseYear() {
+    public String getReleaseYear() {
         return releaseYear;
     }
-    String getGenre() {
+    public String getGenre() {
         return genre;
     }
-    String getRating() {
+    public String getRating() {
         return rating;
     }
-    String getImagePath() {
+    public String getImagePath() {
         return imagePath;
     }
-    void setImagePath(String path) {
+    public void setImagePath(String path) {
         imagePath = path;
     }
 
