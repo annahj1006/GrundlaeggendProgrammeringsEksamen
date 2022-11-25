@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Pages design">
+    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Changes in MovieData">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669298199377</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changes in MovieData">
+      <created>1669327611232</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327611232</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +205,7 @@
     <MESSAGE value="redigeret i datafil" />
     <MESSAGE value="number 9" />
     <MESSAGE value="Pages design" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pages design" />
+    <MESSAGE value="Changes in MovieData" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in MovieData" />
   </component>
 </project>
