@@ -1,7 +1,17 @@
 package Data;
 
+import Domain.Movie;
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+
+
 import java.io.FileNotFoundException;
 import java.io.File;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
@@ -11,9 +21,11 @@ import java.util.ArrayList;
 public class MovieData {
 
     private String filePath;
+    private String imagePath;
 
-    public MovieData(String filePath) {
+    public MovieData(String filePath, String imagePath) {
         this.filePath = filePath;
+        this.imagePath = imagePath;
     }
 
     public List<String> loadData() {
@@ -23,7 +35,6 @@ public class MovieData {
             Scanner scan = new Scanner(new File(filePath));
 
             while (scan.hasNextLine()) {
-                System.out.println(scan.nextLine());
                 media.add(scan.nextLine());
             }
             scan.close();
@@ -33,35 +44,18 @@ public class MovieData {
         return media;
     }
 
+    public List<String> loadImageData() {
+        List<String> posters = new ArrayList<>();
+        try {
+            File dir = new File(imagePath);
 
+            for (final File f : dir.listFiles()) {
+                posters.add(f.getName().substring(0,f.getName().length()-4));
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
-    /*public static void main(String[] args)  {
-        Map<String, ArrayList<String>> film = new HashMap<>();
-        //HashMap serie;
-        //File file = new File("src/main/resources/Data/film.txt");
-        //Scanner s = new Scanner(file);
-
-        //serie = new HashMap<String, ArrayList<String>>();
-
-        //String dataEntry = s.nextLine();
-        //String mediaName = dataEntry.substring(0, dataEntry.indexOf("; "));
-        //String mediaInfo = dataEntry.substring(dataEntry.indexOf("; ") + 1);
-        //String[] line = mediaInfo.split("; ");
-
-        //ArrayList<String> arr = new ArrayList<>();
-
-
-        //media.put(mediaName, arr);
-
-
-            /*
-                Print key value pair
-            film.entrySet().forEach(entry->{
-                System.out.println(entry.getKey() + " = " + entry.getValue());
-            });
-
-             */
-
-        // Get a single value from the arraylist
-        //System.out.println(film.get("Mr Smith Goes To Washington").get(2));
+        return posters;
+    }
 }

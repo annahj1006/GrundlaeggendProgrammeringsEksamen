@@ -6,35 +6,37 @@ public class TVshow {
     protected String genre;
     protected String rating;
     protected String episodes;
-    protected String imagePath;
-        TVshow(String title, String releaseYear, String genre, String rating, String episodes) {
+    protected String poster;
+        public TVshow(String title, String releaseYear, String genre, String rating, String poster, String episodes) {
             this.title = title;
             this.releaseYear = releaseYear;
             this.genre = genre;
             this.rating = rating;
+            this.poster = poster;
             this.episodes = episodes;
+
         }
 
-        String getName() {
+        public String getName() {
             return title;
         }
-        String getReleaseYear() {
+        public String getReleaseYear() {
             return releaseYear;
         }
-        String getGenre() {
+        public String getGenre() {
             return genre;
         }
-        String getRating() {
+        public String getRating() {
             return rating;
         }
 
-        String getEpisodes() {
+        public String getEpisodes() {
             return episodes;
         }
-        String getImagePath() {
-            return imagePath;
+        public String getPoster() {
+            return poster;
         }
-        void setImagePath(String path) {
-            imagePath = path;
+        public String toString() {
+            return (getName() + " - " + getReleaseYear() + " - " + getGenre() + " - " + getRating() + " - " + getEpisodes() + " - " + getPoster());
         }
 }
