@@ -1,17 +1,9 @@
 package Data;
 
-import Domain.Movie;
-
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import javax.imageio.ImageIO;
 
 
 import java.io.FileNotFoundException;
-import java.io.File;
-import java.util.Collections;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
