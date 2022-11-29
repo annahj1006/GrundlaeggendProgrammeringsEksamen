@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Grid update">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MediaSkabelon.fxml" afterDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="MediaSkabelon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669714869290</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="MediaSkabelon">
+      <created>1669716430218</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669716430218</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +296,8 @@
     <MESSAGE value="blaa" />
     <MESSAGE value="Grid new script" />
     <MESSAGE value="Grid update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grid update" />
+    <MESSAGE value="MediaSkabelon" />
+    <option name="LAST_COMMIT_MESSAGE" value="MediaSkabelon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

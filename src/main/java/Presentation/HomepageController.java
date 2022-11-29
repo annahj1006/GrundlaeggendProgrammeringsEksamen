@@ -1,5 +1,6 @@
 package Presentation;
 
+import Domain.Grid;
 import javafx.fxml.FXML;
 import javafx.scene.layout.GridPane;
 import org.w3c.dom.Text;
@@ -31,6 +32,9 @@ public class HomepageController {
     @FXML
     GridPane MediaGrid;
 
+    private Grid grid;
+
+
     @FXML
     public void HomeButtonPressed(){
 
@@ -58,6 +62,11 @@ public class HomepageController {
 
     @FXML
     public void AccountButtonPressed(){
+
+    }
+
+    public void GridMaker(){
+        grid = new Grid(MediaGrid, this);
 
     }
 
