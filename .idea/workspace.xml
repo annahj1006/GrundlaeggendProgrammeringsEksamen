@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/MediaMaking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/MediaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LoginPage.fxml" afterDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="blaa">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,7 +58,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Changes" />
+      <changelist id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="" />
       <created>1669283660682</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -217,14 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669404339989</updated>
     </task>
-    <task id="LOCAL-00021" summary="Changes">
-      <created>1669714481039</created>
+    <task id="LOCAL-00021" summary="HompageController initialize">
+      <created>1669714341409</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1669714481039</updated>
+      <updated>1669714341409</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="blaa">
+      <created>1669714517146</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669714517146</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +276,9 @@
     <MESSAGE value="Changes in MovieData" />
     <MESSAGE value="Changes in Media &#10;- Linked images with the rest of the movie data" />
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="HompageController initialize" />
+    <MESSAGE value="blaa" />
+    <option name="LAST_COMMIT_MESSAGE" value="blaa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
