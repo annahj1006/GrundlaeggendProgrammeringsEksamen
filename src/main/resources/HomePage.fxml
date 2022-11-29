@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -50,23 +51,27 @@
          </image>
       </ImageView>
       <Button fx:id="HomeButton" layoutX="29.0" layoutY="24.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Home" textFill="TRANSPARENT" />
-      <GridPane fx:id="MediaGrid" layoutX="11.0" layoutY="118.0" prefHeight="462.0" prefWidth="774.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.4000244140625" minWidth="10.0" prefWidth="123.60000610351562" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="0.0" prefWidth="117.39998779296874" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="114.20002441406248" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="118.79997558593749" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="307.6000244140625" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+    <AnchorPane layoutX="25.0" layoutY="136.0" minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="757.0">
          <children>
-            <ImageView fx:id="MediaPic" fitHeight="150.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
-            <Button fx:id="MediaButton" mnemonicParsing="false" prefHeight="150.0" prefWidth="195.0" style="-fx-opacity: 0;" text="Button" textFill="TRANSPARENT" />
+            <ScrollPane opacity="0.0" prefHeight="442.0" prefWidth="758.0">
+               <content>
+                  <GridPane fx:id="MediaGrid" prefHeight="442.0" prefWidth="758.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.4000244140625" minWidth="10.0" prefWidth="123.60000610351562" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="0.0" prefWidth="117.39998779296874" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="114.20002441406248" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="118.79997558593749" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="307.6000244140625" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
          </children>
-      </GridPane>
+      </AnchorPane>
    </children>
 </AnchorPane>
