@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="25-11 Anna">
+    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/MediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/annah/IdeaProjects/Grundl-ggendeProgrammeringEksamenE&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/nusers/IdeaProjects/GrundlaeggendProgrammeringsEksamen/src/main/resources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images" />
     </key>
@@ -64,7 +70,6 @@
       <workItem from="1669294160452" duration="19000" />
       <workItem from="1669294204161" duration="1477000" />
       <workItem from="1669295707404" duration="1224000" />
-      <workItem from="1669404337545" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -171,21 +176,42 @@
       <option name="project" value="LOCAL" />
       <updated>1669363229116</updated>
     </task>
-    <task id="LOCAL-00016" summary="Data upload">
-      <created>1669385541997</created>
+    <task id="LOCAL-00016" summary="Changes in MovieData">
+      <created>1669385192131</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1669385541997</updated>
+      <updated>1669385192137</updated>
     </task>
-    <task id="LOCAL-00017" summary="25-11 Anna">
-      <created>1669404368173</created>
+    <task id="LOCAL-00017" summary="Changes in Media &#10;- Linked images with the rest of the movie data">
+      <created>1669390926192</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1669404368173</updated>
+      <updated>1669390926192</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Changes in Media &#10;- Linked images with the rest of the movie data">
+      <created>1669395130797</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669395130798</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes">
+      <created>1669400153798</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669400153798</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Changes">
+      <created>1669404339988</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669404339989</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +233,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -225,8 +263,18 @@
     <MESSAGE value="number 9" />
     <MESSAGE value="Pages design" />
     <MESSAGE value="Changes in MovieData" />
-    <MESSAGE value="Data upload" />
-    <MESSAGE value="25-11 Anna" />
-    <option name="LAST_COMMIT_MESSAGE" value="25-11 Anna" />
+    <MESSAGE value="Changes in Media &#10;- Linked images with the rest of the movie data" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -18,14 +18,16 @@ import Data.MovieData;
 
 public class Media{
     private final MovieData daAccess;
-    public List<Movie> movies;
-    public List<TVshow> tvShow;
+    public List<MediaController> movies;
+    public List<MediaController> tvShow;
+    public List<MediaController> mix;
 
 
     public Media(String dataPath, String imagePath) {
         daAccess = new MovieData(dataPath, imagePath);
         movies = new ArrayList<>();
         tvShow = new ArrayList<>();
+        mix = new ArrayList<>();
     }
 
     public void instanziateMedia() {
@@ -43,8 +45,8 @@ public class Media{
 
             // Splitting our movie data and storing it in separate variables for easier readability
             String[] elements = movieData.split("; ");
-            String title = elements[0];
 
+            String title = elements[0];
             String releaseYear = elements[1];
             String genre = elements[2];
             String poster = posters.get(i);
@@ -53,12 +55,14 @@ public class Media{
 
             // Making movies and tvshow objects and adding them to their separate lists
             if(elements.length == 4) {
-
-                movies.add(new Movie(title, releaseYear, genre, rating, poster));
+                MediaController temp = new MediaController("movie", title, releaseYear, genre, rating, poster);
+                movies.add(temp);
+                mix.add(temp);
             } else if(elements.length == 5) {
-                String episodes = elements[4];
-
-                tvShow.add(new TVshow(title, releaseYear, genre, rating, poster, episodes));
+                MediaController temp = new MediaController("tvShow", title, releaseYear, genre, rating, poster);
+                temp.setEpisodes(elements[4]);
+                tvShow.add(temp);
+                mix.add(temp);
             }
             i++;
         }
