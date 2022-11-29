@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="Data upload" />
+    <list default="true" id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="25-11 Anna">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +64,7 @@
       <workItem from="1669294160452" duration="19000" />
       <workItem from="1669294204161" duration="1477000" />
       <workItem from="1669295707404" duration="1224000" />
+      <workItem from="1669404337545" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -175,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669385541997</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="25-11 Anna">
+      <created>1669404368173</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669404368173</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +226,7 @@
     <MESSAGE value="Pages design" />
     <MESSAGE value="Changes in MovieData" />
     <MESSAGE value="Data upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data upload" />
+    <MESSAGE value="25-11 Anna" />
+    <option name="LAST_COMMIT_MESSAGE" value="25-11 Anna" />
   </component>
 </project>
