@@ -25,11 +25,7 @@ public class LoginController {
     private Scene scene;
     private Parent root;
 
-    public static void main(String[] args){
-        Application.launch(args);
-    }
-
-    public void AccountButtonPressed(ActionEvent event) throws IOException {
+    public void accountButtonPressed(ActionEvent event) throws IOException {
         root = FXMLLoader.load(App.class.getResource("src/main/resources/HomePage.fxml"));
         scene = new Scene(root);
         stage.setScene(scene);

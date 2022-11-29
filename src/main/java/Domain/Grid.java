@@ -18,7 +18,7 @@ public class Grid {
         this.homepageController = homepageController;
     }
 
-    public void MediaInGrid(List<Media> mix){
+    public void mediaInGrid(List<Media> mix){
         mediaGrid.getChildren().clear();
 
         int placeRight = 0;

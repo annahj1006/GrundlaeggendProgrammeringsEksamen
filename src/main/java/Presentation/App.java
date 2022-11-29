@@ -1,30 +1,28 @@
 package Presentation;
 
-import Domain.MediaMaking;
-import Domain.Media;
-
-import java.util.ArrayList;
-import java.util.List;
-
-
-public class App {
-    public static void main(String[] args) throws Exception {
-
-        MediaMaking m = new MediaMaking("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
-        m.instanziateMedia();
-
-        MediaMaking t = new MediaMaking("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
-        t.instanziateMedia();
-
-        List<Media> mix = new ArrayList<>();
-        for(Media media : m.movies) {
-            mix.add(media);
-        }
-        for(Media media : t.tvShow) {
-            mix.add(media);
-        }
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 
+abstract class App extends Application {
+
+    private Stage startingStage;
+
+    public static void main(String[] args){
+        launch();
+    }
+
+    @Override
+    public void start(Stage startingStage) throws IOException {
+        this.startingStage = startingStage;
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("src/main/resources/LoginPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        startingStage.setTitle("L");
+        startingStage.setScene(scene);
+        startingStage.show();
     }
 
 }
