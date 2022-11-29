@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Shit">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Ting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d389b244-83c4-405a-886a-27dadf4f36e6" name="Changes" comment="" />
+      <changelist id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Shit" />
       <created>1669283660682</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -69,6 +68,7 @@
       <workItem from="1669294160452" duration="19000" />
       <workItem from="1669294204161" duration="1477000" />
       <workItem from="1669295707404" duration="1224000" />
+      <workItem from="1669719815658" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -245,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669718399317</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Ting">
+      <created>1669719928744</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669719928745</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +312,8 @@
     <MESSAGE value="Grid update" />
     <MESSAGE value="MediaSkabelon" />
     <MESSAGE value="Shit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shit" />
+    <MESSAGE value="Ting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

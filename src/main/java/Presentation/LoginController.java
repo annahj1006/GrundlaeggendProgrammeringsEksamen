@@ -7,8 +7,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.Node;
-import sun.awt.EventQueueItem;
+
+
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -24,17 +24,17 @@ public class LoginController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private ActionEvent savedEvent;
 
     public static void main(String[] args){
         Application.launch(args);
     }
 
     public void AccountButtonPressed(ActionEvent event) throws IOException {
-        try{
-            root = FXMLLoader.load(App.class.getResource("src/main/resources/HomePage.fxml"));
-            stage = (Stage) ((Node).event.getSource()).getScene().getWindow();
-        }
+        root = FXMLLoader.load(App.class.getResource("src/main/resources/HomePage.fxml"));
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
     }
 
 }
