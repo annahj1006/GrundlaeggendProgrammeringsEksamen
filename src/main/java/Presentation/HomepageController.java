@@ -6,6 +6,8 @@ import javafx.scene.layout.GridPane;
 import org.w3c.dom.Text;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+
 
 public class HomepageController {
     @FXML
@@ -36,7 +38,8 @@ public class HomepageController {
 
 
     @FXML
-    public void HomeButtonPressed(){
+    public void HomeButtonPressed(javafx.event.ActionEvent actionEvent){
+        System.out.println("You clicked me!");
 
     }
 
