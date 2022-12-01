@@ -6,7 +6,6 @@ public class Media {
     protected String releaseYear;
     protected String genre;
     protected String rating;
-    protected String episodes;
     protected String poster;
     public Media(String id, String title, String releaseYear, String genre, String rating, String poster) {
         this.id = id;
@@ -28,19 +27,9 @@ public class Media {
     public String getGenre() {
         return genre;
     }
-    public String getRating() {
-        return rating;
-    }
-    public void setEpisodes(String x) {
-        episodes = x;
-    }
-    public String getEpisodes() {
-        return episodes;
-    }
-    public String getPoster() {
-        return poster;
-    }
+    public String getRating() { return rating; }
+    public String getPoster() { return poster; }
     public String toString() {
-        return (getName() + " - " + getReleaseYear() + " - " + getGenre() + " - " + getRating() + " - " + (id.equals("movie") ? "" : getEpisodes() + " - ") + getPoster());
+        return (getName() + " - " + getReleaseYear() + " - " + getGenre() + " - " + getPoster());
     }
 }

@@ -1,28 +1,32 @@
 package Presentation;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import java.io.IOException;
+
+import Domain.Operations;
+import Domain.Media;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
-abstract class App extends Application {
+public class App {
+    public static void main(String[] args) throws Exception {
 
-    private Stage startingStage;
+        Operations o0 = new Operations("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
+        o0.instantiateMedia();
 
-    public static void main(String[] args){
-        launch();
-    }
+        Operations o1 = new Operations("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
+        o1.instantiateMedia();
 
-    @Override
-    public void start(Stage startingStage) throws IOException {
-        this.startingStage = startingStage;
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("src/main/resources/LoginPage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        startingStage.setTitle("L");
-        startingStage.setScene(scene);
-        startingStage.show();
+        List<Media> l1 = o1.getCombinedMediaList();
+
+        for(Media m : l1) {
+            System.out.println(m.toString());
+        }
+
+
+
+
+
     }
 
 }

@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/MediaMaking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/MediaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/MediaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +35,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2HzMrhl9Qa8LZVsxGKOFvc1wbOG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
