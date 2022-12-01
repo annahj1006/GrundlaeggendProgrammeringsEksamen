@@ -43,27 +43,31 @@ public class HomepageController {
     private Parent root;
 
     @FXML
-    public void HomeButtonPressed(javafx.event.ActionEvent actionEvent){
-        System.out.println("You clicked me!");
+    public void HomeButtonPressed(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
 
     }
     @FXML
-    public void FilmButtonPressed(){
-
-    }
-
-    @FXML
-    public void SerierButtonPressed(){
-
-    }
-
-    @FXML
-    public void GenreButtonPressed(){
+    public void FilmButtonPressed(ActionEvent event){
 
     }
 
     @FXML
-    public void MinListeButtonPressed(){
+    public void SerierButtonPressed(ActionEvent event){
+
+    }
+
+    @FXML
+    public void GenreButtonPressed(ActionEvent event){
+
+    }
+
+    @FXML
+    public void MinListeButtonPressed(ActionEvent event){
 
     }
 
@@ -76,7 +80,11 @@ public class HomepageController {
         stage.show();
     }
 
-    public void GridMaker(){
+    public void GridMaker(ActionEvent event){
+
+    }
+
+    public void Searching(ActionEvent event){
 
     }
 
