@@ -4,6 +4,7 @@ import java.io.File;
 
 
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
@@ -49,5 +50,18 @@ public class MovieData {
         }
 
         return posters;
+    }
+
+    public void save(List<String> favoritMediaList) {
+        try {
+            File file = new File(filePath);
+            PrintWriter printWriter = new PrintWriter(file);
+            for(String media : favoritMediaList) {
+                printWriter.println(media);
+            }
+            printWriter.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("No file. Saving nothing.");
+        }
     }
 }

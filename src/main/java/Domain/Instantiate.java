@@ -11,9 +11,9 @@ import java.util.Collections;
 
 public class Instantiate {
     private final MovieData daAccess;
-    private List<Media> movies;
-    private List<Media> tvShow;
-    private List<Media> mix;
+    protected List<Media> movies;
+    protected List<Media> tvShow;
+    public List<Media> mix;
 
 
 
@@ -21,7 +21,7 @@ public class Instantiate {
         daAccess = new MovieData(dataPath, imagePath);
         movies = new ArrayList<>();
         tvShow = new ArrayList<>();
-        mix = new ArrayList<>();
+        mix = getCombinedMediaList();
     }
 
     public void instantiateMedia() {
@@ -48,45 +48,41 @@ public class Instantiate {
 
             // Making movies and tv-show objects and adding them to their separate lists
             if(elements.length == 4) {
-                Media temp = new Media("movie", title, releaseYear, genre, rating, poster);
+                Media temp = new Movie("movie", title, releaseYear, genre, rating, poster);
                 movies.add(temp);
             } else if(elements.length == 5) {
-                Media temp = new Media("tvShow", title, releaseYear, genre, rating, poster);
-                temp.setEpisodes(elements[4].substring(1, elements[4].length()));
+                Media temp = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
                 tvShow.add(temp);
             }
             i++;
         }
     }
 
-    public List<Media> combinedMediaList() {
+    public List<Media> getCombinedMediaList() {
         List<Media> temp = new ArrayList<>();
-        for(Media movie : getMovies()) {
+        for(Media movie : movies) {
             temp.add(movie);
         }
-        for(Media tvShow : getTvShow()) {
+        for(Media tvShow : tvShow) {
             temp.add(tvShow);
         }
         return temp;
     }
-    public void instantiateGenre() {
-        List<String> genre = new ArrayList<>();
 
-        for(Media m : mix) {
+    protected List<String> instantiateGenre() {
+        List<String> temp = new ArrayList<>();
+
+        for(Media m : getCombinedMediaList()) {
             String[] s = m.getGenre().split(", ");
             for(String sx : s) {
-                if(!(genre.contains(sx))) {
-                    genre.add(sx);
+                if(!(temp.contains(sx))) {
+                    temp.add(sx);
                 }
             }
         }
+        return temp;
     }
 
 
-    public List<Media> getMovies() {
-        return movies;
-    }
-    public List<Media> getTvShow() {
-        return tvShow;
-    }
+
 }
