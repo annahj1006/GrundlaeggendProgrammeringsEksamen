@@ -16,22 +16,22 @@
    <children>
       <ButtonBar layoutX="57.0" layoutY="28.0" prefHeight="34.0" prefWidth="280.0">
         <buttons>
-          <Button fx:id="FilmButton1" mnemonicParsing="false" style="-fx-background-color: #2e2e2e;" text="Film" textFill="WHITE" onAction="#HomeButtonPressed">
+          <Button fx:id="FilmButton1" mnemonicParsing="false" onAction="#FilmButtonPressed" style="-fx-background-color: #2e2e2e;" text="Film" textFill="WHITE">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="SerierButton1" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #2e2e2e;" text="Serier" textFill="WHITE">
+            <Button fx:id="SerierButton1" mnemonicParsing="false" onAction="#SerierButtonPressed" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #2e2e2e;" text="Serier" textFill="WHITE">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="GenreButton1" mnemonicParsing="false" style="-fx-background-color: #2e2e2e;" text="Genre" textFill="WHITE">
+            <Button fx:id="GenreButton1" mnemonicParsing="false" onAction="#GenreButtonPressed" style="-fx-background-color: #2e2e2e;" text="Genre" textFill="WHITE">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="MinListeButton1" mnemonicParsing="false" style="-fx-background-color: #2e2e2e;" text="Min liste" textFill="WHITE">
+            <Button fx:id="MinListeButton1" mnemonicParsing="false" onAction="#MinListeButtonPressed" style="-fx-background-color: #2e2e2e;" text="Min liste" textFill="WHITE">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
@@ -39,15 +39,15 @@
         </buttons>
       </ButtonBar>
       <TextField fx:id="SearchBar1" layoutX="560.0" layoutY="32.0" prefHeight="26.0" prefWidth="179.0" text="Search" />
-      <Button fx:id="AccountButton1" layoutX="754.0" layoutY="34.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Account" textFill="TRANSPARENT" />
       <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="745.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/default-avatar.png" />
+            <Image url="@../Images/default-avatar.png" />
          </image>
       </ImageView>
+      <Button fx:id="AccountButton1" layoutX="744.0" layoutY="25.0" mnemonicParsing="false" onAction="#AccountButtonPressedHomePage" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Account" textFill="TRANSPARENT" />
       <ImageView fitHeight="83.0" fitWidth="113.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/download.png" />
+            <Image url="@../Images/download.png" />
          </image>
       </ImageView>
       <Button fx:id="HomeButton1" layoutX="29.0" layoutY="24.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Home" textFill="TRANSPARENT" />

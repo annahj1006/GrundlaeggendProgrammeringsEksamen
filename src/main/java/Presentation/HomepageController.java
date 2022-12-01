@@ -1,48 +1,52 @@
 package Presentation;
 
-import Domain.Grid;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import org.w3c.dom.Text;
+import javafx.stage.Stage;
+import javafx.scene.Node;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 
 public class HomepageController {
     @FXML
-    Button FilmButton;
+    private Button AccountButton1;
 
     @FXML
-    Button SerierButton;
+    private Button FilmButton1;
 
     @FXML
-    Button GenreButton;
+    private Button GenreButton1;
 
     @FXML
-    Button MinListeButton;
+    private Button HomeButton1;
 
     @FXML
-    Button AccountButton;
+    private GridPane MediaGrid;
 
     @FXML
-    Button HomeButton;
+    private Button MinListeButton1;
 
     @FXML
-    TextField SearchBar;
+    private TextField SearchBar1;
 
     @FXML
-    GridPane MediaGrid;
-
-    private Grid grid;
-
+    private Button SerierButton1;
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 
     @FXML
     public void HomeButtonPressed(javafx.event.ActionEvent actionEvent){
         System.out.println("You clicked me!");
 
     }
-
     @FXML
     public void FilmButtonPressed(){
 
@@ -64,12 +68,15 @@ public class HomepageController {
     }
 
     @FXML
-    public void AccountButtonPressed(){
-
+    public void AccountButtonPressedHomePage(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void GridMaker(){
-        grid = new Grid(MediaGrid, this);
 
     }
 
