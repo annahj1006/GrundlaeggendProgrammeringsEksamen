@@ -11,8 +11,8 @@ import java.util.Collections;
 
 public class Instantiate {
     private final MovieData daAccess;
-    protected List<Media> movies;
-    protected List<Media> tvShow;
+    public List<Media> movies;
+    public List<Media> tvShow;
     public List<Media> mix;
 
 

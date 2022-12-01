@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Operations extends Instantiate {
-    private List<String> genres;
+    public List<String> genres;
     public Operations(String dataPath, String imagePath) {
         super(dataPath, imagePath);
         genres = instantiateGenre();
