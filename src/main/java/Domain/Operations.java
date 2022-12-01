@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Operations extends Instantiate {
     public List<String> genres;
+
     public Operations(String dataPath, String imagePath) {
         super(dataPath, imagePath);
         genres = instantiateGenre();
@@ -15,11 +16,11 @@ public class Operations extends Instantiate {
         List<Media> result = new ArrayList<>();
         String searchWord = word.trim().toLowerCase();
 
-        if(searchWord.equals("movie") || searchWord.equals("film")) {
+        if (searchWord.equals("movie") || searchWord.equals("film")) {
             return getMovies();
         } else if (searchWord.equals("series") || searchWord.equals("serier")) {
             return getTvShow();
-        } else if(genres.contains(searchWord)) {
+        } else if (genres.contains(searchWord)) {
             return result = searchByGenre(searchWord);
         } else {
             for (Media media : mix) {
@@ -33,8 +34,8 @@ public class Operations extends Instantiate {
 
     private List<Media> searchByGenre(String keyword) {
         List<Media> temp = new ArrayList<>();
-        for(Media media : mix) {
-            if(media.getGenre().toLowerCase().contains(keyword)) {
+        for (Media media : mix) {
+            if (media.getGenre().toLowerCase().contains(keyword)) {
                 temp.add(media);
             }
         }
@@ -43,8 +44,8 @@ public class Operations extends Instantiate {
 
     private List<Media> searchByTitle(String keyword) {
         List<Media> temp = new ArrayList<>();
-        for(Media media : mix) {
-            if(media.getName().toLowerCase().contains(keyword)) {
+        for (Media media : mix) {
+            if (media.getName().toLowerCase().contains(keyword)) {
                 temp.add(media);
             }
         }
@@ -54,7 +55,10 @@ public class Operations extends Instantiate {
     public List<Media> getMovies() {
         return movies;
     }
+
     public List<Media> getTvShow() {
         return tvShow;
     }
+
+    public List<Media> getMix() {return mix;}
 }

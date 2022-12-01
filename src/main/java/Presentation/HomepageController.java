@@ -12,11 +12,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.Node;
-import java.util.List;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 
 public class HomepageController {
@@ -52,6 +49,12 @@ public class HomepageController {
     private Grid grid;
     private Bruger bruger;
 
+    public void running(String dataPath, String imagePath) throws IOException {
+        grid = new Grid(MediaGrid, this);
+        bruger = new Bruger(anchorpane);
+        homeButtonPressed(new ActionEvent());
+    }
+
     @FXML
     public void homeButtonPressed(ActionEvent event) throws IOException {
         root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
@@ -65,7 +68,7 @@ public class HomepageController {
     public void filmButtonPressed(ActionEvent event){
         grid = new Grid(MediaGrid, this);
         Operations o = new Operations("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
-        grid.mediaInGrid(o.movies);
+        grid.mediaInGrid(o.getMovies());
     }
 
     @FXML
@@ -92,9 +95,7 @@ public class HomepageController {
 
     /*@FXML
     public void gridMaker(URL location, ResourceBundle resources) throws IOException {
-        grid = new Grid(MediaGrid, this);
-        bruger = new Bruger(anchorpane);
-        homeButtonPressed(new ActionEvent());
+
     }*/
 
     @FXML
