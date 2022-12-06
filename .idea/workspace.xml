@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Trying grid">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_11_34_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_11_34__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_14_36_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_14_36__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_14_43_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_14_43__Changes_1.xml" beforeDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Grid virker, scroll gør ikke :(">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +110,7 @@
       <workItem from="1669295707404" duration="1224000" />
       <workItem from="1669719815658" duration="3081000" />
       <workItem from="1669886847059" duration="12059000" />
-      <workItem from="1670319066104" duration="4448000" />
+      <workItem from="1670319066104" duration="5573000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -347,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669897535192</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Grid virker, scroll gør ikke :(">
+      <created>1670323652001</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670323652001</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +384,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New classes" />
     <MESSAGE value="New classes 2" />
     <MESSAGE value="New classes 3" />
     <MESSAGE value="New classes 4" />
@@ -413,7 +408,8 @@
     <MESSAGE value="Program running" />
     <MESSAGE value="12:48" />
     <MESSAGE value="Trying grid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying grid" />
+    <MESSAGE value="Grid virker, scroll gør ikke :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grid virker, scroll gør ikke :(" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
