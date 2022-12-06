@@ -1,6 +1,7 @@
 package Domain;
 
 import Presentation.HomepageController;
+import Presentation.MediaController;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.layout.GridPane;
@@ -18,8 +19,11 @@ public class Grid {
         this.homepageController = homepageController;
     }
 
-    public void mediaInGrid(List<Media> mix){
+    public void gridLoader(List<Media> mix){
         mediaGrid.getChildren().clear();
+
+        System.out.println("Size: " + mix.size());
+
 
         int placeRight = 0;
         int placeDown = 1;
@@ -28,9 +32,14 @@ public class Grid {
             for (int i = 0; i < mix.size(); i++) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
 
-                fxmlLoader.setLocation(getClass().getResource("src/main/resources/MediaSkabelon.fxml"));
+                fxmlLoader.setLocation(getClass().getResource("/Presentation/MediaSkabelon.fxml"));
 
                 VBox mediaBox = fxmlLoader.load();
+
+
+                MediaController mediaController = fxmlLoader.getController();
+                mediaController.setMedia(mix.get(i));
+
 
                 if(placeRight == 6){
                     placeRight = 0;

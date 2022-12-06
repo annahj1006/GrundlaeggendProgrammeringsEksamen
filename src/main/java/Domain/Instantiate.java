@@ -22,12 +22,15 @@ public class Instantiate {
         movies = new ArrayList<>();
         tvShow = new ArrayList<>();
         mix = getCombinedMediaList();
+        instantiateMedia();
     }
 
     public void instantiateMedia() {
         List<String> posters = daAccess.loadImageData();
         List<String> media = daAccess.loadData();
         int i = 0;
+
+        System.out.println("Poster: " + posters.get(i));
 
         // Sorting our lists alphabetically
         Collections.sort(posters);

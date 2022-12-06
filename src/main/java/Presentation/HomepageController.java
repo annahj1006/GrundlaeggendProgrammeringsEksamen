@@ -30,7 +30,7 @@ public class HomepageController {
     private Button HomeButton1;
 
     @FXML
-    private GridPane MediaGrid;
+    private GridPane mediaGrid;
 
     @FXML
     private Button MinListeButton1;
@@ -50,7 +50,7 @@ public class HomepageController {
     private Bruger bruger;
 
     public void running(String dataPath, String imagePath) throws IOException {
-        grid = new Grid(MediaGrid, this);
+        grid = new Grid(mediaGrid, this);
         bruger = new Bruger(anchorpane);
         homeButtonPressed(new ActionEvent());
     }
@@ -66,9 +66,9 @@ public class HomepageController {
     }
     @FXML
     public void filmButtonPressed(ActionEvent event){
-        grid = new Grid(MediaGrid, this);
+        grid = new Grid(mediaGrid, this);
         Operations o = new Operations("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
-        grid.mediaInGrid(o.getMovies());
+        grid.gridLoader(o.getMovies());
     }
 
     @FXML
