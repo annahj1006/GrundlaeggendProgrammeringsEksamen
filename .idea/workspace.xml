@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Grid virker, scroll gør ikke :(">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Scroll virker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +52,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/annah/IdeaProjects/Grundl-ggendeProgrammeringEksamenE/target/classes/fxml",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.31839082",
+    "project.structure.side.proportion": "0.45938748",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -110,7 +109,7 @@
       <workItem from="1669295707404" duration="1224000" />
       <workItem from="1669719815658" duration="3081000" />
       <workItem from="1669886847059" duration="12059000" />
-      <workItem from="1670319066104" duration="5573000" />
+      <workItem from="1670319066104" duration="6754000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -343,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670323652001</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Scroll virker">
+      <created>1670324703757</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1670324703757</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +390,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New classes 2" />
     <MESSAGE value="New classes 3" />
     <MESSAGE value="New classes 4" />
     <MESSAGE value="New classes 5" />
@@ -409,7 +414,8 @@
     <MESSAGE value="12:48" />
     <MESSAGE value="Trying grid" />
     <MESSAGE value="Grid virker, scroll gør ikke :(" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grid virker, scroll gør ikke :(" />
+    <MESSAGE value="Scroll virker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scroll virker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
