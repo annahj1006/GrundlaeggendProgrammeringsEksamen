@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="559.0" prefWidth="796.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.PlaypageController">
+   <children>
+      <Button fx:id="AccountButton1" layoutX="747.0" layoutY="34.0" mnemonicParsing="false" onAction="#accountButtonPressedHomePage" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Account" textFill="TRANSPARENT" />
+      <ImageView fitHeight="83.0" fitWidth="113.0" layoutX="10.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/download.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="HomeButton1" layoutX="39.0" layoutY="34.0" mnemonicParsing="false" onAction="#homeButtonPressed" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Home" textFill="TRANSPARENT" />
+      <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="748.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/default-avatar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="336.0" fitWidth="599.0" layoutX="60.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

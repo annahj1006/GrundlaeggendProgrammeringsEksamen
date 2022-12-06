@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Scroll virker">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/A_black_image.jpg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +72,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\fxml" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Presentation" />
-      <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -109,7 +115,7 @@
       <workItem from="1669295707404" duration="1224000" />
       <workItem from="1669719815658" duration="3081000" />
       <workItem from="1669886847059" duration="12059000" />
-      <workItem from="1670319066104" duration="6754000" />
+      <workItem from="1670319066104" duration="10093000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -349,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670324703757</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Scroll virker">
+      <created>1670326007968</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1670326007968</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
