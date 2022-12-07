@@ -30,20 +30,26 @@ public class MediaController {
     @FXML
     private Button playButton;
 
+    private Media media;
     private Stage stage;
     private Scene scene;
     private Parent root;
 
     public void setMedia(Media media) {
+        this.media = media;
         mediaImage.setImage(new Image("file:src/main/resources/Data/filmplakater/" + media.getPoster() + ".jpg"));
         mediaTitle.setText(media.getName());
     }
 
     @FXML
     public void playButtonPressed(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(App.class.getResource("fxml/Playpage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(App.class.getResource("/fxml/Playpage.fxml"));
+        root = fxmlLoader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
+        PlaypageController playpageController = fxmlLoader.getController();
+        playpageController.setMedia(media);
         stage.setScene(scene);
         stage.show();
 
