@@ -10,24 +10,30 @@ import java.util.Collections;
 
 
 public class Instantiate {
-    private final MovieData daAccess;
+    public MovieData movieData;
+    public MovieData serieData;
     public List<Media> movies;
     public List<Media> tvShow;
     public List<Media> mix;
 
 
 
-    public Instantiate(String dataPath, String imagePath) {
-        daAccess = new MovieData(dataPath, imagePath);
+    public Instantiate() {
+
         movies = new ArrayList<>();
         tvShow = new ArrayList<>();
-        mix = getCombinedMediaList();
-        instantiateMedia();
+        //mix = getCombinedMediaList();
+        mix = new ArrayList<>();
+        movieData = new MovieData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
+        serieData = new MovieData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
+        instantiateMedia(movieData);
+        instantiateMedia(serieData);
     }
 
-    public void instantiateMedia() {
-        List<String> posters = daAccess.loadImageData();
-        List<String> media = daAccess.loadData();
+    public void instantiateMedia(MovieData data) {
+
+        List<String> posters = data.loadImageData();
+        List<String> media = data.loadData();
         int i = 0;
 
         // Sorting our lists alphabetically
@@ -45,16 +51,16 @@ public class Instantiate {
             String genre = elements[2].substring(1, elements[2].length());
             String poster = posters.get(i);
             String rating = elements[3].substring(1,elements[3].length());
-
-
+            Media temp = null;
             // Making movies and tv-show objects and adding them to their separate lists
             if(elements.length == 4) {
-                Media temp = new Movie("movie", title, releaseYear, genre, rating, poster);
+                temp = new Movie("movie", title, releaseYear, genre, rating, poster);
                 movies.add(temp);
             } else if(elements.length == 5) {
-                Media temp = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
+                temp = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
                 tvShow.add(temp);
             }
+            mix.add(temp);
             i++;
         }
     }

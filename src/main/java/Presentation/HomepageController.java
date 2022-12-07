@@ -63,8 +63,8 @@ public class HomepageController {
     @FXML
     public void initialize(){
         grid = new Grid(mediaGrid, this);
-        Operations o = new Operations("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
-        Operations oo = new Operations("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
+        Operations o = new Operations();
+        Operations oo = new Operations();
         List<Media> mediaList = new ArrayList<>();
         mediaList.addAll(o.getMovies());
         mediaList.addAll(oo.getTvShow());
@@ -83,14 +83,17 @@ public class HomepageController {
     @FXML
     public void filmButtonPressed(ActionEvent event){
         grid = new Grid(mediaGrid, this);
-        Operations o = new Operations("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
+        Operations o = new Operations();
         grid.gridLoader(o.getMovies());
+        //grid.gridLoader(o.searchByGenre("krimi"));
     }
+
+
 
     @FXML
     public void serierButtonPressed(ActionEvent event){
         grid = new Grid(mediaGrid, this);
-        Operations o = new Operations("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
+        Operations o = new Operations();
         grid.gridLoader(o.getTvShow());
     }
 
