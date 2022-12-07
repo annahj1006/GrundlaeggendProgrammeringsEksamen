@@ -69,6 +69,7 @@ public class HomepageController {
         mediaList.addAll(o.getMovies());
         mediaList.addAll(oo.getTvShow());
         grid.gridLoader(mediaList);
+        //grid.gridLoader(o.mix);??
     }
 
     @FXML

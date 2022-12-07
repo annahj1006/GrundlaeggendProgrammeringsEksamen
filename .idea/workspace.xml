@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Slettet eksempel controller">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MovieData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
