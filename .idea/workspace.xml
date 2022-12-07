@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="homepage virker og serier">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="warnings fikset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +113,7 @@
       <workItem from="1669295707404" duration="1224000" />
       <workItem from="1669719815658" duration="3081000" />
       <workItem from="1669886847059" duration="12059000" />
-      <workItem from="1670319066104" duration="18886000" />
+      <workItem from="1670319066104" duration="19174000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -393,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670418896519</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="warnings fikset">
+      <created>1670419148754</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1670419148754</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +437,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="number 7" />
     <MESSAGE value="redigeret i datafil" />
     <MESSAGE value="number 9" />
     <MESSAGE value="Pages design" />
@@ -460,7 +461,8 @@
     <MESSAGE value="Playpage update 2&#10;Den gemmer mediets titel og fremviser det i playpage" />
     <MESSAGE value="scrollpane fikset, igen" />
     <MESSAGE value="homepage virker og serier" />
-    <option name="LAST_COMMIT_MESSAGE" value="homepage virker og serier" />
+    <MESSAGE value="warnings fikset" />
+    <option name="LAST_COMMIT_MESSAGE" value="warnings fikset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

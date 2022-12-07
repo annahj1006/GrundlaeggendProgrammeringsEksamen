@@ -63,7 +63,7 @@ public class PlaypageController {
 
     public void setMedia(Media media){
         this.media = media;
-        mediaTitle.setText(media.getName() + " " + media.getReleaseYear());
+        mediaTitle.setText(media.getName() + " (" + media.getReleaseYear() + ")");
         genreText.setText("Genres: " + media.getGenre());
         rating.setText("Rating: " + media.getRating());
     }
