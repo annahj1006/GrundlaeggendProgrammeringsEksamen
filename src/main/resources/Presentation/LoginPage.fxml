@@ -5,36 +5,36 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.LoginController">
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.LoginController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="230.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="282.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/default-avatar.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="420.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="472.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/default-avatar.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="211.0" fitWidth="252.0" layoutX="274.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="211.0" fitWidth="252.0" layoutX="326.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/download.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="352.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Udklip.PNG" />
          </image>
       </ImageView>
-      <Button fx:id="AccountButtonLoginPage1" layoutX="226.0" layoutY="264.0" mnemonicParsing="false" onAction="#accountButtonPressed" prefHeight="150.0" prefWidth="158.0" style="-fx-opacity: 0;" text="Account1" textFill="TRANSPARENT" />
-      <Button fx:id="AccountButtonLoginPage2" layoutX="416.0" layoutY="264.0" mnemonicParsing="false" onAction="#accountButtonPressed" prefHeight="150.0" prefWidth="158.0" style="-fx-opacity: 0;" text="Account2" textFill="TRANSPARENT" />
-      <ImageView fitHeight="32.0" fitWidth="122.0" layoutX="250.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="AccountButtonLoginPage1" layoutX="278.0" layoutY="378.0" mnemonicParsing="false" onAction="#accountButtonPressed" prefHeight="150.0" prefWidth="158.0" style="-fx-opacity: 0;" text="Account1" textFill="TRANSPARENT" />
+      <Button fx:id="AccountButtonLoginPage2" layoutX="468.0" layoutY="378.0" mnemonicParsing="false" onAction="#accountButtonPressed" prefHeight="150.0" prefWidth="158.0" style="-fx-opacity: 0;" text="Account2" textFill="TRANSPARENT" />
+      <ImageView fitHeight="32.0" fitWidth="122.0" layoutX="302.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Udklipk.PNG" />
          </image>
       </ImageView>
-      <ImageView fitHeight="32.0" fitWidth="83.0" layoutX="466.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="32.0" fitWidth="83.0" layoutX="518.0" layoutY="542.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/Udklipp.PNG" />
          </image>

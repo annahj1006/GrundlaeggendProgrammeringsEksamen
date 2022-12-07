@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Playpage update">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Playpage update 2&#10;Den gemmer mediets titel og fremviser det i playpage">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/black.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/A_black_image.jpg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +40,7 @@
   <component name="ProjectId" id="2HzMrhl9Qa8LZVsxGKOFvc1wbOG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -65,6 +67,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\fxml" />
+      <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Presentation" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\Presentation" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -113,7 +116,7 @@
       <workItem from="1669295707404" duration="1224000" />
       <workItem from="1669719815658" duration="3081000" />
       <workItem from="1669886847059" duration="12059000" />
-      <workItem from="1670319066104" duration="13293000" />
+      <workItem from="1670319066104" duration="14332000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -367,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670329832812</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Playpage update 2&#10;Den gemmer mediets titel og fremviser det i playpage">
+      <created>1670413562130</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1670413562130</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +418,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New classes 4" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="New classes 5" />
     <MESSAGE value="number 6" />
     <MESSAGE value="number 7" />
@@ -433,7 +443,8 @@
     <MESSAGE value="Grid virker, scroll gør ikke :(" />
     <MESSAGE value="Scroll virker" />
     <MESSAGE value="Playpage update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Playpage update" />
+    <MESSAGE value="Playpage update 2&#10;Den gemmer mediets titel og fremviser det i playpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Playpage update 2&#10;Den gemmer mediets titel og fremviser det i playpage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
