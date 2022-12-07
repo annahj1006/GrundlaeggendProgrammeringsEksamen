@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="warnings fikset">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="update i layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/grundlggendeprogrammeringeksamene/HelloController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <workItem from="1669295707404" duration="1224000" />
       <workItem from="1669719815658" duration="3081000" />
       <workItem from="1669886847059" duration="12059000" />
-      <workItem from="1670319066104" duration="19174000" />
+      <workItem from="1670319066104" duration="20305000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -395,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670419148754</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="update i layout">
+      <created>1670419439989</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1670419439989</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="redigeret i datafil" />
     <MESSAGE value="number 9" />
     <MESSAGE value="Pages design" />
     <MESSAGE value="Changes in MovieData" />
@@ -462,7 +468,8 @@
     <MESSAGE value="scrollpane fikset, igen" />
     <MESSAGE value="homepage virker og serier" />
     <MESSAGE value="warnings fikset" />
-    <option name="LAST_COMMIT_MESSAGE" value="warnings fikset" />
+    <MESSAGE value="update i layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="update i layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
