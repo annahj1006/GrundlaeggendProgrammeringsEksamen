@@ -14,6 +14,11 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.ResourceBundle;
 
 
 public class HomepageController {
@@ -56,6 +61,17 @@ public class HomepageController {
     }
 
     @FXML
+    public void initialize(){
+        grid = new Grid(mediaGrid, this);
+        Operations o = new Operations("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
+        Operations oo = new Operations("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
+        List<Media> mediaList = new ArrayList<>();
+        mediaList.addAll(o.getMovies());
+        mediaList.addAll(oo.getTvShow());
+        grid.gridLoader(mediaList);
+    }
+
+    @FXML
     public void homeButtonPressed(ActionEvent event) throws IOException {
         root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -73,6 +89,9 @@ public class HomepageController {
 
     @FXML
     public void serierButtonPressed(ActionEvent event){
+        grid = new Grid(mediaGrid, this);
+        Operations o = new Operations("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
+        grid.gridLoader(o.getTvShow());
     }
 
     @FXML

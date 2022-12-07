@@ -9,6 +9,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -20,8 +22,20 @@ public class PlaypageController {
 
     @FXML
     private Button HomeButton1;
+
+    @FXML
+    private Button playButton;
+
+    @FXML
+    private ImageView playScreen;
     @FXML
     private Text mediaTitle;
+
+    @FXML
+    private Text genreText;
+
+    @FXML
+    private Text rating;
 
     private Stage stage;
     private Scene scene;
@@ -49,7 +63,15 @@ public class PlaypageController {
 
     public void setMedia(Media media){
         this.media = media;
-        mediaTitle.setText(media.getName());
+        mediaTitle.setText(media.getName() + " " + media.getReleaseYear());
+        genreText.setText("Genres: " + media.getGenre());
+        rating.setText("Rating: " + media.getRating());
+    }
+
+    @FXML
+    public void playButtonPressed(){
+        System.out.println(2);
+        playScreen.setImage(new Image("file:src/main/resources/Images/white.png"));
     }
 
 }

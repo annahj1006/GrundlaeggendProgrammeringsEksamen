@@ -2,6 +2,7 @@ package Presentation;
 
 import Domain.Grid;
 import Domain.Media;
+import Domain.Movie;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -37,7 +38,11 @@ public class MediaController {
 
     public void setMedia(Media media) {
         this.media = media;
-        mediaImage.setImage(new Image("file:src/main/resources/Data/filmplakater/" + media.getPoster() + ".jpg"));
+        if (media instanceof Movie){
+            mediaImage.setImage(new Image("file:src/main/resources/Data/filmplakater/" + media.getPoster() + ".jpg"));
+        }else {
+            mediaImage.setImage(new Image("file:src/main/resources/Data/serieforsider/" + media.getPoster() + ".jpg"));
+        }
         mediaTitle.setText(media.getName());
     }
 

@@ -4,6 +4,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.PlaypageController">
@@ -20,12 +21,22 @@
          </image>
       </ImageView>
       <Button fx:id="HomeButton1" layoutX="39.0" layoutY="34.0" mnemonicParsing="false" onAction="#homeButtonPressed" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Home" textFill="TRANSPARENT" />
-      <ImageView fitHeight="397.0" fitWidth="655.0" layoutX="60.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="playScreen" fitHeight="473.0" fitWidth="811.0" layoutX="60.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/black.png" />
          </image></ImageView>
-      <Text fx:id="mediaTitle" fill="WHITE" layoutX="780.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="149.33660888671875" />
-      <Text layoutX="780.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="780.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="mediaTitle" fill="WHITE" layoutX="65.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="638.9365997314453">
+         <font>
+            <Font size="36.0" />
+         </font></Text>
+      <Text fx:id="genreText" fill="WHITE" layoutX="848.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" />
+      <Text fx:id="rating" fill="WHITE" layoutX="848.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" />
+      <Text fx:id="seasons" fill="WHITE" layoutX="848.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="79.0" fitWidth="52.0" layoutX="421.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images\triangle-xxl.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="playButton" layoutX="421.0" layoutY="315.0" mnemonicParsing="false" onAction="#playButtonPressed" prefHeight="58.0" prefWidth="52.0" style="-fx-opacity: 0;" textFill="TRANSPARENT" />
    </children>
 </AnchorPane>
