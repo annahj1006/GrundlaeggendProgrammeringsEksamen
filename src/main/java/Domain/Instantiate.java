@@ -30,8 +30,6 @@ public class Instantiate {
         List<String> media = daAccess.loadData();
         int i = 0;
 
-        System.out.println("Poster: " + posters.get(i));
-
         // Sorting our lists alphabetically
         Collections.sort(posters);
         Collections.sort(media, (p1, p2) -> p1.substring(0,p1.indexOf("; ")).compareTo(p2.substring(0,p2.indexOf("; "))));

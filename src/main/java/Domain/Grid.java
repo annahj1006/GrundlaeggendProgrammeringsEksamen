@@ -22,9 +22,6 @@ public class Grid {
     public void gridLoader(List<Media> mix){
         mediaGrid.getChildren().clear();
 
-        System.out.println("Size: " + mix.size());
-
-
         int placeRight = 0;
         int placeDown = 1;
 
