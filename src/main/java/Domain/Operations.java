@@ -6,8 +6,7 @@ import java.util.ArrayList;
 public class Operations extends Instantiate {
     public List<String> genres;
 
-    public Operations(String dataPath, String imagePath) {
-        super(dataPath, imagePath);
+    public Operations() {
         genres = instantiateGenre();
     }
 
