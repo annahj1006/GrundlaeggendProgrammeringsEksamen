@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Slettet eksempel controller">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="playpage update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +112,7 @@
       <workItem from="1669886847059" duration="12059000" />
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
-      <workItem from="1670442429619" duration="431000" />
+      <workItem from="1670442429619" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -410,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670420564932</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="playpage update">
+      <created>1670442870909</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1670442870909</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +457,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Pages design" />
     <MESSAGE value="Changes in MovieData" />
     <MESSAGE value="Changes in Media &#10;- Linked images with the rest of the movie data" />
     <MESSAGE value="Changes" />
@@ -477,7 +481,8 @@
     <MESSAGE value="warnings fikset" />
     <MESSAGE value="update i layout" />
     <MESSAGE value="Slettet eksempel controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slettet eksempel controller" />
+    <MESSAGE value="playpage update" />
+    <option name="LAST_COMMIT_MESSAGE" value="playpage update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
