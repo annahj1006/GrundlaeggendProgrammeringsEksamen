@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorpane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.HomepageController">
+<AnchorPane fx:id="anchorpane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.HomepageController">
    <children>
       <ButtonBar layoutX="57.0" layoutY="28.0" prefHeight="34.0" prefWidth="280.0">
         <buttons>
@@ -25,11 +25,7 @@
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="GenreButton1" mnemonicParsing="false" onAction="#genreButtonPressed" style="-fx-background-color: #2e2e2e;" text="Genre" textFill="WHITE">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Button>
+            <Button fx:id="genreButton" mnemonicParsing="false" onAction="#genreButtonPressed" style="-fx-background-color: #2e2e2e;" text="Genre" textFill="WHITE" />
             <Button fx:id="MinListeButton1" mnemonicParsing="false" onAction="#minListeButtonPressed" style="-fx-background-color: #2e2e2e;" text="Min liste" textFill="WHITE">
                <font>
                   <Font name="Arial" size="14.0" />
