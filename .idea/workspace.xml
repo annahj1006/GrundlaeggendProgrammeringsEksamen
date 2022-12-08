@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="random update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Presentation/GenrePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Genrepage fxml og controller">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/GenrePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/GenrePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +114,7 @@
       <workItem from="1669886847059" duration="12059000" />
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
-      <workItem from="1670442429619" duration="7393000" />
+      <workItem from="1670442429619" duration="7574000" />
     </task>
     <task id="LOCAL-00001" summary="New classes">
       <created>1669286127836</created>
@@ -431,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670494965425</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Genrepage fxml og controller">
+      <created>1670502124783</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1670502124783</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +473,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Changes in Media &#10;- Linked images with the rest of the movie data" />
     <MESSAGE value="Changes" />
     <MESSAGE value="HompageController initialize" />
     <MESSAGE value="blaa" />
@@ -498,7 +497,8 @@
     <MESSAGE value="Slettet eksempel controller" />
     <MESSAGE value="playpage update" />
     <MESSAGE value="random update" />
-    <option name="LAST_COMMIT_MESSAGE" value="random update" />
+    <MESSAGE value="Genrepage fxml og controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Genrepage fxml og controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

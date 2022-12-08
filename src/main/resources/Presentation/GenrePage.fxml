@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.GenrepageController">
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.GenrepageController">
    <children>
       <Button layoutX="943.0" layoutY="34.0" mnemonicParsing="false" onAction="#accountButtonPressed" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Account" textFill="TRANSPARENT" />
       <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="944.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
@@ -142,7 +142,7 @@
             </Button>
          </buttons>
       </ButtonBar>
-      <AnchorPane layoutX="9.0" layoutY="262.0" prefHeight="438.0" prefWidth="987.0" style="-fx-background-color: transparent;">
+      <AnchorPane layoutX="9.0" layoutY="212.0" prefHeight="488.0" prefWidth="987.0" style="-fx-background-color: transparent;">
          <children>
             <ScrollPane hbarPolicy="NEVER" layoutY="30.0" prefWidth="971.0" style="-fx-background: transparent; -fx-background-color: transparent;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="30.0">
                <content>
