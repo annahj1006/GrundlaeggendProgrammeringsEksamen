@@ -31,7 +31,7 @@ public class Operations extends Instantiate {
         return null;
     }
 
-    private List<Media> searchByGenre(String keyword) {
+    public List<Media> searchByGenre(String keyword) {
         List<Media> temp = new ArrayList<>();
         for (Media media : mix) {
             if (media.getGenre().toLowerCase().contains(keyword)) {
@@ -41,7 +41,7 @@ public class Operations extends Instantiate {
         return temp;
     }
 
-    private List<Media> searchByTitle(String keyword) {
+    public List<Media> searchByTitle(String keyword) {
         List<Media> temp = new ArrayList<>();
         for (Media media : mix) {
             if (media.getName().toLowerCase().contains(keyword)) {

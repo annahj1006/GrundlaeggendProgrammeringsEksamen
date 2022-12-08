@@ -1,6 +1,6 @@
 package Domain;
 
-import Data.MovieData;
+import Data.MediaData;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -10,8 +10,10 @@ import java.util.Collections;
 
 
 public class Instantiate {
-    public MovieData movieData;
-    public MovieData serieData;
+
+    // Ligegydlige?
+    //public MediaData movieData;
+    //public MediaData serieData;
     public List<Media> movies;
     public List<Media> tvShow;
     public List<Media> mix;
@@ -22,15 +24,19 @@ public class Instantiate {
 
         movies = new ArrayList<>();
         tvShow = new ArrayList<>();
-        //mix = getCombinedMediaList();
-        mix = new ArrayList<>();
-        movieData = new MovieData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
-        serieData = new MovieData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
-        instantiateMedia(movieData);
-        instantiateMedia(serieData);
+
+        // Ligegyldige pt 2?
+        //movieData = new MediaData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater");
+        //serieData = new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider");
+
+
+        instantiateMedia(new MediaData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater"));
+        instantiateMedia(new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider"));
+
+        mix = getCombinedMediaList();
     }
 
-    public void instantiateMedia(MovieData data) {
+    private void instantiateMedia(MediaData data) {
 
         List<String> posters = data.loadImageData();
         List<String> media = data.loadData();
@@ -51,21 +57,19 @@ public class Instantiate {
             String genre = elements[2].substring(1, elements[2].length());
             String poster = posters.get(i);
             String rating = elements[3].substring(1,elements[3].length());
-            Media temp = null;
             // Making movies and tv-show objects and adding them to their separate lists
             if(elements.length == 4) {
-                temp = new Movie("movie", title, releaseYear, genre, rating, poster);
+                Media temp = new Movie("movie", title, releaseYear, genre, rating, poster);
                 movies.add(temp);
             } else if(elements.length == 5) {
-                temp = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
+                Media temp = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
                 tvShow.add(temp);
             }
-            mix.add(temp);
             i++;
         }
     }
 
-    public List<Media> getCombinedMediaList() {
+    private List<Media> getCombinedMediaList() {
         List<Media> temp = new ArrayList<>();
         for(Media movie : movies) {
             temp.add(movie);

@@ -11,12 +11,12 @@ import java.util.ArrayList;
 
 
 
-public class MovieData {
+public class MediaData {
 
     private String filePath;
     private String imagePath;
 
-    public MovieData(String filePath, String imagePath) {
+    public MediaData(String filePath, String imagePath) {
         this.filePath = filePath;
         this.imagePath = imagePath;
     }
