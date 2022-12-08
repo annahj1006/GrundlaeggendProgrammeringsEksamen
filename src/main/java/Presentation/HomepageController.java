@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 
 public class HomepageController {
@@ -64,12 +65,9 @@ public class HomepageController {
         stage.setScene(scene);
         stage.show();
     }
-
     @FXML
     public void minListeButtonPressed(ActionEvent event){
-
     }
-
     @FXML
     public void accountButtonPressedHomePage(ActionEvent event) throws IOException {
         root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
@@ -80,7 +78,8 @@ public class HomepageController {
     }
     @FXML
     public void searching(ActionEvent event){
-
+        Operations o = new Operations();
+        grid = new Grid(mediaGrid);
+        grid.gridLoader(o.search(SearchBar1.getText().toLowerCase()));
     }
-
 }

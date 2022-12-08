@@ -33,7 +33,7 @@
             </Button>
         </buttons>
       </ButtonBar>
-      <TextField fx:id="SearchBar1" layoutX="759.0" layoutY="31.0" onAction="#searching" prefHeight="26.0" prefWidth="179.0" text="Search" />
+      <TextField fx:id="SearchBar1" layoutX="759.0" layoutY="31.0" onAction="#searching" prefHeight="26.0" prefWidth="179.0" promptText="Search" />
       <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="944.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/default-avatar.png" />

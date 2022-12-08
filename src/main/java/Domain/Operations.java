@@ -12,7 +12,6 @@ public class Operations extends Instantiate {
 
 
     public List<Media> search(String word) {
-        List<Media> result = new ArrayList<>();
         String searchWord = word.trim().toLowerCase();
 
         if (searchWord.equals("movie") || searchWord.equals("film")) {
@@ -20,15 +19,15 @@ public class Operations extends Instantiate {
         } else if (searchWord.equals("series") || searchWord.equals("serier")) {
             return getTvShow();
         } else if (genres.contains(searchWord)) {
-            return result = searchByGenre(searchWord);
+            return searchByGenre(searchWord);
         } else {
             for (Media media : mix) {
-                if (searchWord.contains(media.getName().toLowerCase())) {
-                    return result = searchByTitle(searchWord);
+                if (media.getName().toLowerCase().contains(searchWord)) {
+                    return searchByTitle(searchWord);
                 }
             }
         }
-        return null;
+        return getMix();
     }
 
     public List<Media> searchByGenre(String keyword) {

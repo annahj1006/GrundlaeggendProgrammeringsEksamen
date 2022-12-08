@@ -87,7 +87,7 @@ public class Instantiate {
             String[] s = m.getGenre().split(", ");
             for(String sx : s) {
                 if(!(temp.contains(sx))) {
-                    temp.add(sx);
+                    temp.add(sx.toLowerCase());
                 }
             }
         }
