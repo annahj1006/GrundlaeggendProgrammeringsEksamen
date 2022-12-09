@@ -5,7 +5,6 @@ module java {
     requires javafx.web;
     requires javafx.graphics;
     requires javafx.media;
-    requires charm.glisten;
     //requires org.testfx;
     //requires org.testfx.junit;
 
