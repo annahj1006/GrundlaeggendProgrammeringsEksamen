@@ -5,7 +5,11 @@ import java.util.ArrayList;
 
 public class Operations extends Instantiate {
 
+    CurrentUserSingleton data;
+    Bruger currentUser;
     public Operations() {
+        data = CurrentUserSingleton.getInstance();
+        currentUser = data.getUser();
     }
 
 
@@ -47,7 +51,7 @@ public class Operations extends Instantiate {
         }
         return temp;
     }
-
+    public List<Media> getMyList() { return currentUser.fav; }
     public List<Media> getMovies() {
         return movies;
     }

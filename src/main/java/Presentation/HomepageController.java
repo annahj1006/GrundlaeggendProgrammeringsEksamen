@@ -19,10 +19,6 @@ import java.util.Scanner;
 public class HomepageController {
     @FXML
     private GridPane mediaGrid;
-
-    @FXML
-    private Button MinListeButton1;
-
     @FXML
     private TextField SearchBar1;
 
@@ -30,11 +26,15 @@ public class HomepageController {
     private Scene scene;
     private Parent root;
     private Grid grid;
+    private Operations o;
+
+    public HomepageController() {
+        o = new Operations();
+        grid = new Grid(mediaGrid);
+    }
 
     @FXML
     public void initialize(){
-        grid = new Grid(mediaGrid);
-        Operations o = new Operations();
         grid.gridLoader(o.mix);
     }
     @FXML
@@ -46,15 +46,11 @@ public class HomepageController {
         stage.show();
     }
     @FXML
-    public void filmButtonPressed(ActionEvent event){
-        grid = new Grid(mediaGrid);
-        Operations o = new Operations();
+    public void filmButtonPressed(){
         grid.gridLoader(o.getMovies());
     }
     @FXML
-    public void serierButtonPressed(ActionEvent event){
-        grid = new Grid(mediaGrid);
-        Operations o = new Operations();
+    public void serierButtonPressed(){
         grid.gridLoader(o.getTvShow());
     }
     @FXML
@@ -66,7 +62,8 @@ public class HomepageController {
         stage.show();
     }
     @FXML
-    public void minListeButtonPressed(ActionEvent event){
+    public void minListeButtonPressed(){
+        grid.gridLoader(o.getMyList());
     }
     @FXML
     public void accountButtonPressedHomePage(ActionEvent event) throws IOException {
@@ -77,9 +74,7 @@ public class HomepageController {
         stage.show();
     }
     @FXML
-    public void searching(ActionEvent event){
-        Operations o = new Operations();
-        grid = new Grid(mediaGrid);
+    public void searching(){
         grid.gridLoader(o.search(SearchBar1.getText()));
     }
 }

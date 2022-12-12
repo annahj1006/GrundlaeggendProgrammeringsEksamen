@@ -1,24 +1,21 @@
 package Presentation;
 
-import Domain.Bruger;
-import Domain.Grid;
-import Domain.Media;
-import Domain.Movie;
+import Domain.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
 import java.io.IOException;
 
-public class MediaController {
+public class MediaController{
 
     @FXML
     private ImageView mediaImage;
@@ -26,12 +23,20 @@ public class MediaController {
     @FXML
     private Label mediaTitle;
 
+    @FXML
+    private Button addToMyListButton;
+
     private Media media;
     private Stage stage;
     private Scene scene;
     private Parent root;
+    private CurrentUserSingleton data;
+    private Bruger currentUser;
 
-
+    public MediaController() {
+        data = CurrentUserSingleton.getInstance();
+        currentUser = data.getUser();
+    }
 
     public void setMedia(Media media) {
         this.media = media;
@@ -56,12 +61,15 @@ public class MediaController {
         stage.show();
     }
 
-    public void addToMyListButtonPressed(ActionEvent event) {
+    public void addToMyListButtonPressed() {
+        // flyt try/catch
         try {
-            if(!(x.mediaExsists(media))) {
-                x.addMedia(media);
+            if(!(currentUser.mediaExsists(media))) {
+                currentUser.addMedia(media);
+                addToMyListButton.setText("-");
             } else {
-                x.removeMedia(media);
+                currentUser.removeMedia(media);
+                addToMyListButton.setText("+");
             }
         } catch (NullPointerException e) {
             System.out.println("No user found");
