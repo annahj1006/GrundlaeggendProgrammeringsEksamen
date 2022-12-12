@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Den virker nu">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="mylist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/MediaSkabelon.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +116,7 @@
       <workItem from="1669886847059" duration="12059000" />
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
-      <workItem from="1670442429619" duration="15117000" />
-    </task>
-    <task id="LOCAL-00001" summary="New classes">
-      <created>1669286127836</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1669286127836</updated>
+      <workItem from="1670442429619" duration="19409000" />
     </task>
     <task id="LOCAL-00002" summary="New classes 2">
       <created>1669286234377</created>
@@ -463,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670836392616</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="mylist">
+      <created>1670840645302</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1670840645303</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Grid new script" />
     <MESSAGE value="Grid update" />
     <MESSAGE value="MediaSkabelon" />
     <MESSAGE value="Shit" />
@@ -530,7 +527,8 @@
     <MESSAGE value="lille update" />
     <MESSAGE value="Search update" />
     <MESSAGE value="Den virker nu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Den virker nu" />
+    <MESSAGE value="mylist" />
+    <option name="LAST_COMMIT_MESSAGE" value="mylist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

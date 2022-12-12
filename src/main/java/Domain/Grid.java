@@ -1,7 +1,6 @@
 package Domain;
 
-import Presentation.GenrepageController;
-import Presentation.HomepageController;
+
 import Presentation.MediaController;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -13,11 +12,9 @@ import java.util.List;
 
 public class Grid {
     private GridPane mediaGrid;
-    //private HomepageController homepageController;
 
-    public Grid(GridPane mediaGrid/*,HomepageController homepageController*/){
+    public Grid(GridPane mediaGrid){
         this.mediaGrid = mediaGrid;
-        //this.homepageController = homepageController;
     }
 
     public void gridLoader(List<Media> mix){
