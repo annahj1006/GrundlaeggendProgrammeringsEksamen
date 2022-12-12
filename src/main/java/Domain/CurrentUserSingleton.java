@@ -1,5 +1,6 @@
 package Domain;
 
+// This class is a singleton and is used to store the user that is currently "logged in"
 public class CurrentUserSingleton {
 
     private static final CurrentUserSingleton instance = new CurrentUserSingleton();

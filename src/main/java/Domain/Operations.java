@@ -1,5 +1,7 @@
 package Domain;
 
+import Data.MediaData;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -7,12 +9,14 @@ public class Operations extends Instantiate {
 
     CurrentUserSingleton data;
     Bruger currentUser;
+
+    //Constructor allows access to the current user
     public Operations() {
         data = CurrentUserSingleton.getInstance();
         currentUser = data.getUser();
     }
 
-
+    // Our search function for the searchbar on the homepage (utilizes the searchByTitle function)
     public List<Media> search(String word) {
         String searchWord = word.trim().toLowerCase();
 
@@ -32,6 +36,10 @@ public class Operations extends Instantiate {
         return getMix();
     }
 
+
+
+
+    // Allows us to filter movies and series by genre
     public List<Media> searchByGenre(String keyword) {
         List<Media> temp = new ArrayList<>();
         for (Media media : mix) {
@@ -42,6 +50,7 @@ public class Operations extends Instantiate {
         return temp;
     }
 
+    // Allows us to search by a keyword
     public List<Media> searchByTitle(String keyword) {
         List<Media> temp = new ArrayList<>();
         for (Media media : mix) {
@@ -51,14 +60,14 @@ public class Operations extends Instantiate {
         }
         return temp;
     }
-    public List<Media> getMyList() { return currentUser.fav; }
+
+    // Returns different list so they can be accessed by different parts of the program.
+    public List<Media> getMyList() { return currentUser.getMyList(); }
     public List<Media> getMovies() {
         return movies;
     }
-
     public List<Media> getTvShow() {
         return tvShow;
     }
-
     public List<Media> getMix() {return mix;}
 }

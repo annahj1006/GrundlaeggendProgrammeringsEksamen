@@ -31,7 +31,7 @@ public class GenrepageController {
     public void initialize(){
         grid = new Grid(mediaGrid);
         Operations o = new Operations();
-        grid.gridLoader(o.mix);
+        grid.gridLoader(o.getMix());
         chosenGenre.setText("All genres");
     }
 

@@ -28,15 +28,17 @@ public class HomepageController {
     private Grid grid;
     private Operations o;
 
+    private CurrentUserSingleton data;
+
     public HomepageController() {
         o = new Operations();
-        grid = new Grid(mediaGrid);
+        data = CurrentUserSingleton.getInstance();
     }
 
     @FXML
     public void initialize(){
         grid = new Grid(mediaGrid);
-        grid.gridLoader(o.mix);
+        grid.gridLoader(o.getMix());
     }
     @FXML
     public void homeButtonPressed(ActionEvent event) throws IOException {
@@ -71,6 +73,7 @@ public class HomepageController {
     }
     @FXML
     public void accountButtonPressedHomePage(ActionEvent event) throws IOException {
+        data.getUser().saveMyList();
         root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

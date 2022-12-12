@@ -15,6 +15,6 @@ public class TVshow extends Media{
     }
 
     public String toString() {
-        return super.toString() + " - " + getEpisodes();
+        return super.toString() + getEpisodes() + "; " + getRating() + ";";
     }
 }

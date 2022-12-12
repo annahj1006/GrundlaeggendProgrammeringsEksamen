@@ -46,6 +46,7 @@ public class MediaController{
             mediaImage.setImage(new Image("file:src/main/resources/Data/serieforsider/" + media.getPoster() + ".jpg"));
         }
         mediaTitle.setText(media.getName());
+
     }
 
     @FXML
@@ -69,7 +70,7 @@ public class MediaController{
                 addToMyListButton.setText("-");
             } else {
                 currentUser.removeMedia(media);
-                addToMyListButton.setText("+");
+                //addToMyListButton.setText("+");
             }
         } catch (NullPointerException e) {
             System.out.println("No user found");

@@ -30,6 +30,6 @@ public class Media {
     public String getRating() { return rating; }
     public String getPoster() { return poster; }
     public String toString() {
-        return (getName() + " - " + getReleaseYear() + " - " + getGenre() + " - " + getPoster());
+        return (getName() + "; " + getReleaseYear() + "; " + getGenre() + "; ");
     }
 }
