@@ -3,6 +3,7 @@ package Data;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.UncheckedIOException;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
@@ -40,16 +41,12 @@ public class MediaData {
     // loadImageData gets all the images from the specified imagePath and returns the name of the image in a list
     public List<String> loadImageData() {
         List<String> posters = new ArrayList<>();
-        try {
-            File dir = new File(imagePath);
 
-            for (final File f : dir.listFiles()) {
-                posters.add(f.getName().substring(0,f.getName().length()-4));
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        File dir = new File(imagePath);
+
+        for (File f : dir.listFiles()) {
+            posters.add(f.getName().substring(0,f.getName().length()-4));
         }
-
         return posters;
     }
 
@@ -72,9 +69,9 @@ public class MediaData {
     }
 
     // The saveMyList function takes a favorite list and a name and save the list in a txt file with the specified name
-    public void saveMyList(List<String> favoritMediaList, String name) {
+    public void saveMyList(List<String> favoritMediaList) {
         try {
-            File file = new File(filePath + "/" + name);
+            File file = new File(filePath);
             PrintWriter printWriter = new PrintWriter(file);
             for(String media : favoritMediaList) {
                 printWriter.println(media);

@@ -14,7 +14,8 @@ public class Bruger {
     public Bruger(String name) {
         this.name = name;
         fav = new ArrayList<>();
-        daAccess = new MediaData("src/main/resources/Data/", "");
+        daAccess = new MediaData("src/main/resources/Data/" + name, "");
+
     }
 
     // getters for the name of the user and their favorite list
@@ -43,6 +44,16 @@ public class Bruger {
         return false;
     }
 
+    /*public List<Media> loadMyList() {
+        List<Media> temp = new ArrayList<>();
+        Operations o = new Operations();
+        if(!(o.instantiateMedia(daAccess) == null)) {
+            return o.instantiateMedia(daAccess);
+        }
+        return temp;
+    }*/
+
+
     // Edits the users favorit list from objects to strings and calls the method saveMyList in MediaData
     public void saveMyList() {
         List<String> x = new ArrayList<>();
@@ -51,6 +62,6 @@ public class Bruger {
             x.add(m.toString());
             System.out.println(m.toString());
         }
-        daAccess.saveMyList(x, getName());
+        daAccess.saveMyList(x);
     }
 }

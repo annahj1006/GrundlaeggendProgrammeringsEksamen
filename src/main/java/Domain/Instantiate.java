@@ -21,11 +21,11 @@ public class Instantiate {
     // After data and posters have been made into objects, we make a list with
     protected Instantiate() {
 
-        movies = new ArrayList<>();
-        tvShow = new ArrayList<>();
+        //movies = new ArrayList<>();
+        //tvShow = new ArrayList<>();
 
-        instantiateMedia(new MediaData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater"));
-        instantiateMedia(new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider"));
+        movies = instantiateMedia(new MediaData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater"));
+        tvShow = instantiateMedia(new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider"));
 
         mix = getCombinedMediaList();
         genreList = instantiateGenre();
@@ -33,7 +33,8 @@ public class Instantiate {
 
     // instantiateMedia takes a MediaData object as an argument and
     // gets all the relevant data from the given MediaData(from the providede paths) and stores them as objects.
-    private void instantiateMedia(MediaData data) {
+    private List<Media> instantiateMedia(MediaData data) {
+        List<Media> tempList = new ArrayList<>();
 
         List<String> posters = data.loadImageData();
         List<String> media = data.loadData();
@@ -57,14 +58,15 @@ public class Instantiate {
 
             // Making movies and tv-show objects and adding them to their respective lists
             if(elements.length == 4) {
-                Media temp = new Movie("movie", title, releaseYear, genre, rating, poster);
-                movies.add(temp);
+                Media tempObj = new Movie("movie", title, releaseYear, genre, rating, poster);
+                tempList.add(tempObj);
             } else if(elements.length == 5) {
-                Media temp = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
-                tvShow.add(temp);
+                Media tempObj = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
+                tempList.add(tempObj);
             }
             i++;
         }
+        return tempList;
     }
 
     // returns the combined list of both movies and series

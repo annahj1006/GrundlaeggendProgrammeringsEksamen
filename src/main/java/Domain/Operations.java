@@ -29,7 +29,8 @@ public class Operations extends Instantiate {
         } else {
             for (Media media : mix) {
                 if (media.getName().toLowerCase().contains(searchWord)) {
-                    return searchByTitle(searchWord);
+
+
                 }
             }
         }
