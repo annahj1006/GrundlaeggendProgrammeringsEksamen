@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="mylist">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Search update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/annah/IdeaProjects/Grundl-ggendeProgrammeringEksamenE/target/classes/fxml",
+    "last_opened_file_path": "/Users/nusers/IdeaProjects/GrundlaeggendProgrammeringsEksamen/target/classes/fxml",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45938748",
@@ -64,11 +70,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes/fxml" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\fxml" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Presentation" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\Presentation" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images" />
@@ -116,7 +122,14 @@
       <workItem from="1669886847059" duration="12059000" />
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
-      <workItem from="1670442429619" duration="19409000" />
+      <workItem from="1670442429619" duration="12778000" />
+    </task>
+    <task id="LOCAL-00001" summary="New classes">
+      <created>1669286127836</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669286127836</updated>
     </task>
     <task id="LOCAL-00002" summary="New classes 2">
       <created>1669286234377</created>
@@ -440,28 +453,7 @@
       <option name="project" value="LOCAL" />
       <updated>1670507744103</updated>
     </task>
-    <task id="LOCAL-00048" summary="Den virker nu">
-      <created>1670585841237</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1670585841237</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Den virker nu">
-      <created>1670836392616</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1670836392616</updated>
-    </task>
-    <task id="LOCAL-00050" summary="mylist">
-      <created>1670840645302</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1670840645303</updated>
-    </task>
-    <option name="localTasksCounter" value="51" />
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,6 +495,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="blaa" />
+    <MESSAGE value="Grid new script" />
     <MESSAGE value="Grid update" />
     <MESSAGE value="MediaSkabelon" />
     <MESSAGE value="Shit" />
@@ -526,9 +520,7 @@
     <MESSAGE value="Genrepage fxml og controller" />
     <MESSAGE value="lille update" />
     <MESSAGE value="Search update" />
-    <MESSAGE value="Den virker nu" />
-    <MESSAGE value="mylist" />
-    <option name="LAST_COMMIT_MESSAGE" value="mylist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

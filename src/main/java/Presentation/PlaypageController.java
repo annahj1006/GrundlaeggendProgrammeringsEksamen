@@ -61,7 +61,7 @@ public class PlaypageController {
 
     @FXML
     public void playButtonPressed(){
-        System.out.println(2);
+        //System.out.println(2);
         playScreen.setImage(new Image("file:src/main/resources/Images/white.png"));
     }
 

@@ -4,10 +4,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Operations extends Instantiate {
-    public List<String> genres;
 
     public Operations() {
-        genres = instantiateGenre();
     }
 
 
@@ -18,7 +16,7 @@ public class Operations extends Instantiate {
             return getMovies();
         } else if (searchWord.equals("series") || searchWord.equals("serier")) {
             return getTvShow();
-        } else if (genres.contains(searchWord)) {
+        } else if (genreList.contains(searchWord)) {
             return searchByGenre(searchWord);
         } else {
             for (Media media : mix) {
