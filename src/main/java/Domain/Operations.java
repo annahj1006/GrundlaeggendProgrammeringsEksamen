@@ -27,17 +27,15 @@ public class Operations extends Instantiate {
         } else if (genreList.contains(searchWord)) {
             return searchByGenre(searchWord);
         } else {
-            for (Media media : mix) {
-                if (media.getName().toLowerCase().contains(searchWord)) {
-
-
-                }
+            if(searchByTitle(word).size() == mix.size()) {
+                //Custom exception
+                System.out.println("No results found");
+                return null;
+            } else {
+                return searchByTitle(word);
             }
         }
-        return getMix();
     }
-
-
 
 
     // Allows us to filter movies and series by genre
