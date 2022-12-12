@@ -1,5 +1,6 @@
 package Presentation;
 
+import Domain.Bruger;
 import Domain.Grid;
 import Domain.Media;
 import Domain.Movie;
@@ -20,16 +21,10 @@ import java.io.IOException;
 public class MediaController {
 
     @FXML
-    private Button addToMyListButton;
-
-    @FXML
     private ImageView mediaImage;
 
     @FXML
     private Label mediaTitle;
-
-    @FXML
-    private Button playButton;
 
     private Media media;
     private Stage stage;
@@ -57,6 +52,10 @@ public class MediaController {
         playpageController.setMedia(media);
         stage.setScene(scene);
         stage.show();
+    }
 
+    public void addToMyListButtonPressed(){
+        Bruger bruger = new Bruger();
+        media.add();
     }
 }

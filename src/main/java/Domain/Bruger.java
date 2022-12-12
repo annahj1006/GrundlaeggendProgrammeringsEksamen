@@ -1,12 +1,17 @@
 package Domain;
 
-import javafx.scene.layout.AnchorPane;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Bruger {
-    private AnchorPane currentPlayAnchor;
-    private AnchorPane anchorPane;
 
-    public Bruger(AnchorPane anchorPane) {
-        this.anchorPane = anchorPane;
+    public List<Media> bruger1 = new ArrayList<>();
+    public List<Media> bruger2 = new ArrayList<>();
+
+    public Bruger() {
+
+    }
+    public void add(){
+
     }
 }

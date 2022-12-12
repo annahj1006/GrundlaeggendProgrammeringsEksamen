@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="150.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.MediaController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="150.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.MediaController">
    <children>
       <Button fx:id="playButton" mnemonicParsing="false" onAction="#playButtonPressed" style="-fx-background-color: transparent;">
          <graphic>
@@ -22,7 +22,7 @@
                   <Font name="Times New Roman Bold" size="14.0" />
                </font>
             </Label>
-            <Button fx:id="addToMyListButton" mnemonicParsing="false" style="-fx-background-color: #2e2e2e;" text="+" textFill="WHITE">
+            <Button fx:id="addToMyListButton" mnemonicParsing="false" onAction="#addToMyListButtonPressed" style="-fx-background-color: #2e2e2e;" text="+" textFill="WHITE">
                <HBox.margin>
                   <Insets bottom="1.0" />
                </HBox.margin>

@@ -1,5 +1,6 @@
 package Presentation;
 
+import Domain.Bruger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,19 +24,21 @@ public class LoginController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private ActionEvent savedEvent;
 
     @FXML
     public void accountButtonPressed(ActionEvent event) throws IOException {
         root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-    }
 
-    public void onActionLogin(KeyEvent keyEvent) throws IOException {
-        accountButtonPressed(savedEvent);
-    }
+        Button button = new Button();
 
+        if(button == AccountButtonLoginPage1){
+            Bruger margrete = new Bruger();
+        } else if (button == AccountButtonLoginPage2){
+            Bruger dorte = new Bruger();
+        }
+    }
 }
