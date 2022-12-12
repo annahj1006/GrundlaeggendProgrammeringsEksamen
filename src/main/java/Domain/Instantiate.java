@@ -18,6 +18,8 @@ public class Instantiate {
     public List<Media> tvShow;
     public List<Media> mix;
 
+    public List<String> genreList;
+
 
 
     public Instantiate() {
@@ -34,6 +36,7 @@ public class Instantiate {
         instantiateMedia(new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider"));
 
         mix = getCombinedMediaList();
+        genreList = instantiateGenre();
     }
 
     private void instantiateMedia(MediaData data) {
@@ -80,14 +83,14 @@ public class Instantiate {
         return temp;
     }
 
-    protected List<String> instantiateGenre() {
+    private List<String> instantiateGenre() {
         List<String> temp = new ArrayList<>();
 
-        for(Media m : getCombinedMediaList()) {
-            String[] s = m.getGenre().split(", ");
-            for(String sx : s) {
-                if(!(temp.contains(sx))) {
-                    temp.add(sx.toLowerCase());
+        for(Media m : mix) {
+            String[] genreArray = m.getGenre().split(", ");
+            for(String genre : genreArray) {
+                if(!(temp.contains(genre))) {
+                    temp.add(genre.toLowerCase());
                 }
             }
         }

@@ -12,6 +12,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginController {
 
@@ -25,20 +27,27 @@ public class LoginController {
     private Scene scene;
     private Parent root;
 
+    public List<Bruger> userList = new ArrayList<>();
+
+
     @FXML
     public void accountButtonPressed(ActionEvent event) throws IOException {
+
+        String accountButtonID = ((Button)event.getSource()).getId();
+
+        if(accountButtonID.equals("AccountButtonLoginPage1")) {
+            Bruger x = new Bruger("Margrete");
+        } else if (accountButtonID.equals("AccountButtonLoginPage2")) {
+            Bruger x = new Bruger("Dorte");
+        }
+
         root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
 
-        Button button = new Button();
 
-        if(button == AccountButtonLoginPage1){
-            Bruger margrete = new Bruger();
-        } else if (button == AccountButtonLoginPage2){
-            Bruger dorte = new Bruger();
-        }
     }
 }

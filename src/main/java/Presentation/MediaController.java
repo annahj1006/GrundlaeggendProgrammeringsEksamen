@@ -31,6 +31,8 @@ public class MediaController {
     private Scene scene;
     private Parent root;
 
+
+
     public void setMedia(Media media) {
         this.media = media;
         if (media instanceof Movie){
@@ -54,8 +56,15 @@ public class MediaController {
         stage.show();
     }
 
-    public void addToMyListButtonPressed(){
-        Bruger bruger = new Bruger();
-        media.add();
+    public void addToMyListButtonPressed(ActionEvent event) {
+        try {
+            if(!(x.mediaExsists(media))) {
+                x.addMedia(media);
+            } else {
+                x.removeMedia(media);
+            }
+        } catch (NullPointerException e) {
+            System.out.println("No user found");
+        }
     }
 }

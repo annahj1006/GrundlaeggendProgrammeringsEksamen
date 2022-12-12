@@ -80,6 +80,6 @@ public class HomepageController {
     public void searching(ActionEvent event){
         Operations o = new Operations();
         grid = new Grid(mediaGrid);
-        grid.gridLoader(o.search(SearchBar1.getText().toLowerCase()));
+        grid.gridLoader(o.search(SearchBar1.getText()));
     }
 }
