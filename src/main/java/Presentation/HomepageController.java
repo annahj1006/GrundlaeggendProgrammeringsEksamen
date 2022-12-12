@@ -35,6 +35,7 @@ public class HomepageController {
 
     @FXML
     public void initialize(){
+        grid = new Grid(mediaGrid);
         grid.gridLoader(o.mix);
     }
     @FXML
@@ -47,10 +48,12 @@ public class HomepageController {
     }
     @FXML
     public void filmButtonPressed(){
+        grid = new Grid(mediaGrid);
         grid.gridLoader(o.getMovies());
     }
     @FXML
     public void serierButtonPressed(){
+        grid = new Grid(mediaGrid);
         grid.gridLoader(o.getTvShow());
     }
     @FXML
@@ -63,6 +66,7 @@ public class HomepageController {
     }
     @FXML
     public void minListeButtonPressed(){
+        grid = new Grid(mediaGrid);
         grid.gridLoader(o.getMyList());
     }
     @FXML
@@ -75,6 +79,7 @@ public class HomepageController {
     }
     @FXML
     public void searching(){
+        grid = new Grid(mediaGrid);
         grid.gridLoader(o.search(SearchBar1.getText()));
     }
 }

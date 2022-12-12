@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Working on fav List">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/CurrentUserSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Working on fav List and correcting a few mistakes">
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -459,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670844765172</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Working on fav List and correcting a few mistakes">
+      <created>1670850515475</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1670850515475</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Grid new script" />
     <MESSAGE value="Grid update" />
     <MESSAGE value="MediaSkabelon" />
     <MESSAGE value="Shit" />
@@ -526,7 +525,8 @@
     <MESSAGE value="lille update" />
     <MESSAGE value="Search update" />
     <MESSAGE value="Working on fav List" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on fav List" />
+    <MESSAGE value="Working on fav List and correcting a few mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on fav List and correcting a few mistakes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
