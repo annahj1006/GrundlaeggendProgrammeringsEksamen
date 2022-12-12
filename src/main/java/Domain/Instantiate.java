@@ -2,6 +2,7 @@ package Domain;
 
 import Data.MediaData;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,7 +20,7 @@ public class Instantiate {
     // and 'serier' and passes it along to the instantiateMedia function.
     // Which then return to lists one with movie objects and one with series objects
     // After data and posters have been made into objects, we make a list with
-    protected Instantiate() {
+    protected Instantiate() throws FileNotFoundException {
 
         //movies = new ArrayList<>();
         //tvShow = new ArrayList<>();
@@ -33,7 +34,7 @@ public class Instantiate {
 
     // instantiateMedia takes a MediaData object as an argument and
     // gets all the relevant data from the given MediaData(from the providede paths) and stores them as objects.
-    private List<Media> instantiateMedia(MediaData data) {
+    private List<Media> instantiateMedia(MediaData data) throws FileNotFoundException {
         List<Media> tempList = new ArrayList<>();
 
         List<String> posters = data.loadImageData();
