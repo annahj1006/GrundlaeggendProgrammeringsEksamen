@@ -12,7 +12,7 @@ public class TVshow extends Media{
     public String getSeriesEpisodes() {
         String temp = "";
         for (Map.Entry<String, String> pair : episodes.entrySet()) {
-            temp += " " + pair.getKey() + "-" + pair.getValue() + ";";
+            temp += pair.getKey() + "-" + pair.getValue() + ";";
         }
         return temp;
     }

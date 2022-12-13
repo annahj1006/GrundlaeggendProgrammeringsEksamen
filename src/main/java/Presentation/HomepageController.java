@@ -28,7 +28,7 @@ public class HomepageController {
 
     private CurrentUserSingleton data;
 
-    public HomepageController(){
+    public HomepageController() {
         try {
             o = new Operations();
         } catch (FileNotFoundException e) {

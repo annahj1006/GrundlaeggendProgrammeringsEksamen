@@ -40,7 +40,7 @@ public class MediaController{
 
     public void setMedia(Media media) {
         this.media = media;
-        if (media instanceof Movie){
+        if (media.getId().equals("movie")){
             mediaImage.setImage(new Image("file:src/main/resources/Data/filmplakater/" + media.getPoster() + ".jpg"));
         } else {
             mediaImage.setImage(new Image("file:src/main/resources/Data/serieforsider/" + media.getPoster() + ".jpg"));
