@@ -34,7 +34,7 @@
       <Text fx:id="seasons" fill="WHITE" layoutX="848.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <ImageView fitHeight="79.0" fitWidth="52.0" layoutX="421.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
          <image>
-            <Image url="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images\triangle-xxl.png" />
+            <Image url="@../Images/triangle-xxl.png" />
          </image>
       </ImageView>
       <Button fx:id="playButton" layoutX="421.0" layoutY="315.0" mnemonicParsing="false" onAction="#playButtonPressed" prefHeight="58.0" prefWidth="52.0" style="-fx-opacity: 0;" textFill="TRANSPARENT" />
