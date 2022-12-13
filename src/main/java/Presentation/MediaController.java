@@ -63,16 +63,12 @@ public class MediaController{
     }
 
     public void addToMyListButtonPressed() {
-        try {
-            if(!(currentUser.mediaExsists(media))) {
-                currentUser.addMedia(media);
-                addToMyListButton.setText("-");
-            } else {
-                currentUser.removeMedia(media);
-                //addToMyListButton.setText("+");
-            }
-        } catch (NullPointerException e) {
-            System.out.println("No user found");
+        if(!(currentUser.mediaExsists(media))) {
+            currentUser.addMedia(media);
+            addToMyListButton.setText("-");
+        } else {
+            currentUser.removeMedia(media);
+            addToMyListButton.setText("+");
         }
     }
 }

@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Checked for places to use exceptions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/NoResultsFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/NoResultsFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" afterDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Made some exceptions work">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +117,6 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
-    </task>
-    <task id="LOCAL-00008" summary="number 7">
-      <created>1669287489938</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1669287489938</updated>
     </task>
     <task id="LOCAL-00009" summary="redigeret i datafil">
       <created>1669295219417</created>
@@ -469,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670966785201</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Made some exceptions work">
+      <created>1670975664384</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1670975664386</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ting" />
     <MESSAGE value="LoginController" />
     <MESSAGE value="Update" />
     <MESSAGE value="Program running" />
@@ -536,7 +527,8 @@
     <MESSAGE value="Made comments in Data and Domain" />
     <MESSAGE value="Playpage virker" />
     <MESSAGE value="Checked for places to use exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checked for places to use exceptions" />
+    <MESSAGE value="Made some exceptions work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made some exceptions work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -14,11 +14,15 @@ public class App extends Application {
     }
     @Override
     public void start(Stage startingStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/LoginPage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        startingStage.setTitle("L");
-        startingStage.setScene(scene);
-        startingStage.show();
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/LoginPage.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            startingStage.setTitle("L");
+            startingStage.setScene(scene);
+            startingStage.show();
+        } catch (IOException e ) {
+            System.out.println("xd");
+        }
     }
 
 }
