@@ -13,6 +13,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class GenrepageController {
@@ -28,7 +29,7 @@ public class GenrepageController {
     private Grid grid;
 
     @FXML
-    public void initialize(){
+    public void initialize() throws FileNotFoundException{
         grid = new Grid(mediaGrid);
         Operations o = new Operations();
         grid.gridLoader(o.getMix());
@@ -52,7 +53,7 @@ public class GenrepageController {
         stage.show();
     }
     @FXML
-    public void genreButtonPressed(ActionEvent event){
+    public void genreButtonPressed(ActionEvent event) throws FileNotFoundException {
         Button button = (Button) event.getSource();
         Operations o = new Operations();
         grid.gridLoader(o.searchByGenre(button.getText().toLowerCase()));

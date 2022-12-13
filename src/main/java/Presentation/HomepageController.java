@@ -12,6 +12,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -30,7 +31,7 @@ public class HomepageController {
 
     private CurrentUserSingleton data;
 
-    public HomepageController() {
+    public HomepageController() throws FileNotFoundException {
         o = new Operations();
         data = CurrentUserSingleton.getInstance();
     }

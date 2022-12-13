@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Made comments in Data and Domain">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Search update">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Data/Dorte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_14_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-11-2022_14_43__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/shelved.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/shelved.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/shelved1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/shelved1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/shelved2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/shelved2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/shelved3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/shelved3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/Margrete" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/Margrete" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +125,7 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
+      <workItem from="1670916327913" duration="691000" />
     </task>
     <task id="LOCAL-00005" summary="New classes 5">
       <created>1669286914266</created>
