@@ -10,15 +10,22 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.Node;
+import javafx.scene.text.Text;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomepageController {
     @FXML
     private GridPane mediaGrid;
     @FXML
     private TextField SearchBar1;
+    @FXML
+    private Text noResultsFound;
+    @FXML
+    private Text noConnectionToDatabase;
 
     private Stage stage;
     private Scene scene;
@@ -26,20 +33,22 @@ public class HomepageController {
     protected Grid grid;
     protected Operations o;
 
+
     private CurrentUserSingleton data;
 
     public HomepageController() {
-        try {
-            o = new Operations();
-        } catch (FileNotFoundException e) {
-            System.out.println("You suck");
-        }
         data = CurrentUserSingleton.getInstance();
     }
     @FXML
     public void initialize(){
-        grid = new Grid(mediaGrid);
-        grid.gridLoader(o.getMix());
+        try {
+            o = new Operations();
+            grid = new Grid(mediaGrid);
+            grid.gridLoader(o.getMix());
+        } catch (Exception e) {
+            noConnectionToDatabase.setText("No connection to database");
+        }
+
     }
     @FXML
     public void homeButtonPressed(ActionEvent event) throws IOException {
@@ -86,8 +95,10 @@ public class HomepageController {
         try {
             grid = new Grid(mediaGrid);
             grid.gridLoader(o.search(SearchBar1.getText()));
+            noResultsFound.setText("");
         } catch (NoResultsFoundException e) {
-            System.out.println(e.getMessage());
+            grid.gridLoader(e.getEmptyList());
+            noResultsFound.setText(e.getMessage());
         }
     }
 }

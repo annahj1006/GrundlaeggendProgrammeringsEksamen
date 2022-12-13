@@ -52,9 +52,7 @@ public class MediaData {
             }
             return posters;
         } else {
-            System.out.println("No connection found");
             throw new FileNotFoundException("No connection to database.");
-
         }
     }
 

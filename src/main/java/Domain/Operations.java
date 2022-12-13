@@ -28,7 +28,7 @@ public class Operations extends Instantiate {
             return searchByGenre(searchWord);
         } else {
             if(searchByTitle(word).size() == 0) {
-                throw new NoResultsFoundException();
+                throw new NoResultsFoundException(searchByTitle(word));
             } else {
                 return searchByTitle(word);
             }

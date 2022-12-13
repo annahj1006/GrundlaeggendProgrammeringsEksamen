@@ -27,6 +27,7 @@ public class Instantiate {
         movies = instantiateMedia(new MediaData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater"));
         tvShow = instantiateMedia(new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider"));
 
+
         mix = getCombinedMediaList();
         genreList = instantiateGenre();
 
