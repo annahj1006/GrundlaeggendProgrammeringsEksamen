@@ -1,7 +1,5 @@
 package Presentation;
 
-import Domain.Operations;
-import Domain.Media;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

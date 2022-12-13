@@ -86,7 +86,11 @@ public class HomepageController {
     }
     @FXML
     public void searching(){
-        grid = new Grid(mediaGrid);
-        grid.gridLoader(o.search(SearchBar1.getText()));
+        try {
+            grid = new Grid(mediaGrid);
+            grid.gridLoader(o.search(SearchBar1.getText()));
+        } catch (NoResultsFoundException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

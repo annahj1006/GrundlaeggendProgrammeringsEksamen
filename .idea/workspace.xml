@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Checked for places to use exceptions">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Data/Dorte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/NoResultsFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/Margrete" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/Margrete" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,13 +118,6 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
-    </task>
-    <task id="LOCAL-00006" summary="number 6">
-      <created>1669287194876</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1669287194876</updated>
     </task>
     <task id="LOCAL-00007" summary="number 7">
       <created>1669287414151</created>
@@ -470,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670879806996</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Checked for places to use exceptions">
+      <created>1670934879936</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1670934879937</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

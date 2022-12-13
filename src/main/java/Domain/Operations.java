@@ -1,6 +1,5 @@
 package Domain;
 
-import Data.MediaData;
 
 import java.io.FileNotFoundException;
 import java.util.List;
@@ -28,10 +27,8 @@ public class Operations extends Instantiate {
         } else if (genreList.contains(searchWord)) {
             return searchByGenre(searchWord);
         } else {
-            if(searchByTitle(word).size() == mix.size()) {
-                //Custom exception
-                System.out.println("No results found");
-                return null;
+            if(searchByTitle(word).size() == 0) {
+                throw new NoResultsFoundException();
             } else {
                 return searchByTitle(word);
             }

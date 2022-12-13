@@ -42,7 +42,7 @@ public class MediaController{
         this.media = media;
         if (media instanceof Movie){
             mediaImage.setImage(new Image("file:src/main/resources/Data/filmplakater/" + media.getPoster() + ".jpg"));
-        }else {
+        } else {
             mediaImage.setImage(new Image("file:src/main/resources/Data/serieforsider/" + media.getPoster() + ".jpg"));
         }
         mediaTitle.setText(media.getName());
@@ -63,7 +63,6 @@ public class MediaController{
     }
 
     public void addToMyListButtonPressed() {
-        // flyt try/catch
         try {
             if(!(currentUser.mediaExsists(media))) {
                 currentUser.addMedia(media);
