@@ -1,20 +1,29 @@
 package Domain;
 
-import Domain.Media;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TVshow extends Media{
-    private String episodes;
+    private Map<String, String> episodes;
 
-    public TVshow(String id, String title, String releaseYear, String genre, String rating, String poster, String episode) {
+    public TVshow(String id, String title, String releaseYear, String genre, String rating, String poster, Map<String, String> seriesEpisodes) {
         super(id, title, releaseYear, genre, rating, poster);
-        this.episodes = episode;
+        episodes = seriesEpisodes;
     }
-
-    public String getEpisodes() {
-        return episodes;
+    public String getSeriesEpisodes() {
+        String temp = "";
+        for (Map.Entry<String, String> pair : episodes.entrySet()) {
+            temp += " " + pair.getKey() + "-" + pair.getValue() + ";";
+        }
+        return temp;
     }
 
     public String toString() {
-        return super.toString() + getEpisodes() + "; " + getRating() + ";";
+       String temp = "";
+        for (Map.Entry<String, String> pair : episodes.entrySet()) {
+           temp += " " + pair.getKey() + "-" + pair.getValue() + ";";
+        }
+        return super.toString() + getRating() + ";" + temp;
+
     }
 }

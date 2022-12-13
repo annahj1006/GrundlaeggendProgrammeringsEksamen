@@ -29,10 +29,14 @@ public class LoginController {
 
         String accountButtonID = ((Button)event.getSource()).getId();
 
-        if(accountButtonID.equals("AccountButtonLoginPage1")) {
-            data.setUser(new Bruger("Margrete"));
-        } else if (accountButtonID.equals("AccountButtonLoginPage2")) {
-            data.setUser(new Bruger("Dorte"));
+        try {
+            if(accountButtonID.equals("AccountButtonLoginPage1")) {
+                data.setUser(new Bruger("Margrete"));
+            } else if (accountButtonID.equals("AccountButtonLoginPage2")) {
+                data.setUser(new Bruger("Dorte"));
+            }
+        } catch (NullPointerException e) {
+            System.out.println("You suck");
         }
 
         root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));

@@ -5,6 +5,8 @@ import Data.MediaData;
 import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 import java.util.Collections;
 
 
@@ -22,20 +24,20 @@ public class Instantiate {
     // After data and posters have been made into objects, we make a list with
     protected Instantiate() throws FileNotFoundException {
 
-        //movies = new ArrayList<>();
-        //tvShow = new ArrayList<>();
-
         movies = instantiateMedia(new MediaData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater"));
         tvShow = instantiateMedia(new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider"));
 
         mix = getCombinedMediaList();
         genreList = instantiateGenre();
+
     }
 
     // instantiateMedia takes a MediaData object as an argument and
     // gets all the relevant data from the given MediaData(from the providede paths) and stores them as objects.
     private List<Media> instantiateMedia(MediaData data) throws FileNotFoundException {
         List<Media> tempList = new ArrayList<>();
+
+
 
         List<String> posters = data.loadImageData();
         List<String> media = data.loadData();
@@ -48,6 +50,7 @@ public class Instantiate {
 
         // Makes objects from the string of data given from the MediaData object
         for(String mediaData : media) {
+            Map<String, String> tempMap = new HashMap<>();
             // Splitting our movie data and storing it in separate variables for easier readability
             String[] elements = mediaData.split(";");
 
@@ -62,7 +65,15 @@ public class Instantiate {
                 Media tempObj = new Movie("movie", title, releaseYear, genre, rating, poster);
                 tempList.add(tempObj);
             } else if(elements.length == 5) {
-                Media tempObj = new TVshow("tvShow", title, releaseYear, genre, rating, poster, elements[4].substring(1, elements[4].length()));
+                String temp = elements[4].replace(",","-");
+                temp = temp.replace(" ", "");
+                String[] seriesEpisodes = temp.split("-");
+
+                for(int j  = 0; j < seriesEpisodes.length; j++) {
+                    tempMap.put(seriesEpisodes[j], seriesEpisodes[++j]);
+                }
+
+                Media tempObj = new TVshow("tvShow", title, releaseYear, genre, rating, poster, tempMap);
                 tempList.add(tempObj);
             }
             i++;

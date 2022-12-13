@@ -6,14 +6,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Scanner;
+
 
 
 public class HomepageController {
@@ -30,8 +30,12 @@ public class HomepageController {
 
     private CurrentUserSingleton data;
 
-    public HomepageController() {
-        o = new Operations();
+    public HomepageController() throws FileNotFoundException {
+        try {
+            o = new Operations();
+        } catch (FileNotFoundException e) {
+            System.out.println("You suck");
+        }
         data = CurrentUserSingleton.getInstance();
     }
 

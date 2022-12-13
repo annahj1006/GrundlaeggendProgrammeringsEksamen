@@ -2,6 +2,7 @@ package Domain;
 
 import Data.MediaData;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -11,7 +12,7 @@ public class Operations extends Instantiate {
     Bruger currentUser;
 
     //Constructor allows access to the current user
-    public Operations() {
+    public Operations() throws FileNotFoundException {
         data = CurrentUserSingleton.getInstance();
         currentUser = data.getUser();
     }

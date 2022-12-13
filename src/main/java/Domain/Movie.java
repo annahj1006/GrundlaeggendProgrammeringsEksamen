@@ -7,6 +7,6 @@ public class Movie extends Media{
     }
 
     public String toString() {
-        return super.toString()+ getRating() + ";";
+        return super.toString() + getRating() + ";";
     }
 }

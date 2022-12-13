@@ -3,8 +3,6 @@ package Data;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.io.UncheckedIOException;
-import java.util.Collections;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
@@ -43,15 +41,21 @@ public class MediaData {
     }
 
     // loadImageData gets all the images from the specified imagePath and returns the name of the image in a list
-    public List<String> loadImageData() {
+    public List<String> loadImageData() throws FileNotFoundException {
         List<String> posters = new ArrayList<>();
 
         File file = new File(imagePath);
 
-        for (File f : file.listFiles()) {
-            posters.add(f.getName().substring(0,f.getName().length()-4));
+        if(file.exists()) {
+            for (File f : file.listFiles()) {
+                posters.add(f.getName().substring(0,f.getName().length()-4));
+            }
+            return posters;
+        } else {
+            System.out.println("No connection found");
+            throw new FileNotFoundException("No connection to database.");
+
         }
-        return posters;
     }
 
     // loadMyList loads the current users favorite list and returns it in a list of strings

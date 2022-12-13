@@ -27,13 +27,13 @@ public class Bruger {
     // Adds a movie/series to the users favorit list
     public void addMedia(Media media) {
         fav.add(media);
-        System.out.println(media.toString() + " was added to fav.");
+        //System.out.println(media.toString() + " was added to fav.");
     }
 
     // Removes a movie/series from the users favorit list
     public void removeMedia(Media media) {
         fav.remove(media);
-        System.out.println(media.toString() + " was removed to fav.");
+        //System.out.println(media.toString() + " was removed to fav.");
     }
 
     // Checks if a movie/series already is a part of the users favorite list
