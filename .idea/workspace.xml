@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Playpage virker">
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="fejl fjernet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,20 +120,6 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
-    </task>
-    <task id="LOCAL-00007" summary="number 7">
-      <created>1669287414151</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1669287414151</updated>
-    </task>
-    <task id="LOCAL-00008" summary="number 7">
-      <created>1669287489938</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1669287489938</updated>
     </task>
     <task id="LOCAL-00009" summary="redigeret i datafil">
       <created>1669295219417</created>
@@ -461,7 +450,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670934879937</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Playpage virker">
+      <created>1670947958099</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1670947958099</updated>
+    </task>
+    <task id="LOCAL-00057" summary="fejl fjernet">
+      <created>1670948067799</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1670948067799</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ting" />
     <MESSAGE value="LoginController" />
     <MESSAGE value="Update" />
     <MESSAGE value="Program running" />
@@ -528,7 +530,8 @@
     <MESSAGE value="Made comments in Data and Domain" />
     <MESSAGE value="Checked for places to use exceptions" />
     <MESSAGE value="Playpage virker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Playpage virker" />
+    <MESSAGE value="fejl fjernet" />
+    <option name="LAST_COMMIT_MESSAGE" value="fejl fjernet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

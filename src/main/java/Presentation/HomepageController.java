@@ -14,8 +14,6 @@ import javafx.scene.Node;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-
-
 public class HomepageController {
     @FXML
     private GridPane mediaGrid;
@@ -25,12 +23,12 @@ public class HomepageController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private Grid grid;
-    private Operations o;
+    protected Grid grid;
+    protected Operations o;
 
     private CurrentUserSingleton data;
 
-    public HomepageController() throws FileNotFoundException {
+    public HomepageController(){
         try {
             o = new Operations();
         } catch (FileNotFoundException e) {
@@ -38,7 +36,6 @@ public class HomepageController {
         }
         data = CurrentUserSingleton.getInstance();
     }
-
     @FXML
     public void initialize(){
         grid = new Grid(mediaGrid);

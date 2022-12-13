@@ -1,6 +1,7 @@
 package Presentation;
 
 import Domain.Media;
+import Domain.TVshow;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,17 +15,17 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PlaypageController {
+public class PlaypageController{
     @FXML
     private ImageView playScreen;
     @FXML
     private Text mediaTitle;
-
     @FXML
     private Text genreText;
-
     @FXML
     private Text rating;
+    @FXML
+    private Text seasons;
 
     private Stage stage;
     private Scene scene;
@@ -39,7 +40,6 @@ public class PlaypageController {
         stage.setScene(scene);
         stage.show();
     }
-
     @FXML
     public void accountButtonPressedHomePage(ActionEvent event) throws IOException {
         root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
@@ -48,17 +48,18 @@ public class PlaypageController {
         stage.setScene(scene);
         stage.show();
     }
-
     public void setMedia(Media media){
         this.media = media;
         mediaTitle.setText(media.getName() + " (" + media.getReleaseYear() + ")");
         genreText.setText("Genres: " + media.getGenre());
         rating.setText("Rating: " + media.getRating());
-    }
 
+        if(media instanceof TVshow){
+            seasons.setText("Episodes: " + ((TVshow) media).getSeriesEpisodes());
+        }
+    }
     @FXML
     public void playButtonPressed(){
-        //System.out.println(2);
         playScreen.setImage(new Image("file:src/main/resources/Images/white.png"));
     }
 
