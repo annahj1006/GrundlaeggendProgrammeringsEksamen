@@ -22,7 +22,8 @@
       <Text fx:id="errorMsgException" fill="WHITE" layoutX="250.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
          <font>
             <Font size="36.0" />
-         </font></Text>
+         </font>
+      </Text>
       <ImageView fitHeight="211.0" fitWidth="252.0" layoutX="326.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/download.png" />
