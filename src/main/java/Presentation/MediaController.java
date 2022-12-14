@@ -48,34 +48,32 @@ public class MediaController {
             mediaImage.setImage(new Image("file:src/main/resources/Data/serieforsider/" + media.getPoster() + ".jpg"));
         }
         mediaTitle.setText(media.getName());
-
+        addToMyListButton.setText(media.getAddedState());
     }
 
     @FXML
     public void playButtonPressed(ActionEvent event) throws IOException {
-        //try {
-            FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(App.class.getResource("/fxml/Playpage.fxml"));
-            root = fxmlLoader.load();
-            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            PlaypageController playpageController = fxmlLoader.getController();
-            playpageController.setMedia(media);
-            stage.setScene(scene);
-            stage.show();
-        //} catch (NullPointerException | IOException | IllegalStateException e) {
-            //System.out.println(e.getCause());
-            //System.out.println("There was an unexcpected error finding this " + media.getId());
-        //}
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(App.class.getResource("/fxml/Playpage.fxml"));
+        root = fxmlLoader.load();
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        PlaypageController playpageController = fxmlLoader.getController();
+        playpageController.setMedia(media);
+        stage.setScene(scene);
+        stage.show();
     }
 
+    @FXML
     public void addToMyListButtonPressed() {
-        if(!(currentUser.mediaExsists(media))) {
-            currentUser.addMedia(media);
-            addToMyListButton.setText("-");
-        } else {
+        if(currentUser.mediaExsists(media)) {
             currentUser.removeMedia(media);
-            addToMyListButton.setText("+");
+            media.setAddedState("+");
+            addToMyListButton.setText(media.getAddedState());
+        } else {
+            currentUser.addMedia(media);
+            media.setAddedState("-");
+            addToMyListButton.setText(media.getAddedState());
         }
     }
 }

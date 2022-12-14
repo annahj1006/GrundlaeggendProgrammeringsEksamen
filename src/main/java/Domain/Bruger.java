@@ -38,8 +38,10 @@ public class Bruger {
 
     // Checks if a movie/series already is a part of the users favorite list
     public boolean mediaExsists(Media media) {
-        if(fav.contains(media)) {
-            return true;
+        for(Media m : fav) {
+            if(m.getName().equals(media.getName())) {
+                return true;
+            }
         }
         return false;
     }

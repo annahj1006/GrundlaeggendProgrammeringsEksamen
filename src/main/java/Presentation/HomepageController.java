@@ -25,19 +25,22 @@ public class HomepageController extends LoginController {
     @FXML
     protected Text errorMsgForUser;
     protected Grid grid;
-    protected Operations o;
+
+
 
     public HomepageController() {
         super();
-        try {
-            o = new Operations();
+            /*try {
+                o = new Operations();
+                System.out.println("1");
+            } catch (FileNotFoundException e) {
+                noUserException.setText("No connection to database");
+            }*/
 
-        } catch (FileNotFoundException e) {
-            errorMsgForUser.setText("No connection to database");
-        }
     }
     @FXML
     public void initialize(){
+
         grid = new Grid(mediaGrid);
         grid.gridLoader(o.getMix());
     }
