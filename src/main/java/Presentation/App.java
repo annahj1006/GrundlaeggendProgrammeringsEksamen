@@ -21,7 +21,7 @@ public class App extends Application {
             startingStage.setScene(scene);
             startingStage.show();
         } catch (IOException e ) {
-            System.out.println("xd");
+            System.out.println("App fail");
         }
     }
 

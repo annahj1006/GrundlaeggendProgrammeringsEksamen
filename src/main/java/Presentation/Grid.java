@@ -1,7 +1,6 @@
-package Domain;
+package Presentation;
 
-
-import Presentation.MediaController;
+import Domain.Media;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.layout.GridPane;

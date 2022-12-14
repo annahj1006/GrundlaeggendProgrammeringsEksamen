@@ -15,6 +15,7 @@ import javafx.scene.text.Text;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Collections;
 
 
 public class HomepageController {
@@ -34,8 +35,6 @@ public class HomepageController {
     private Parent root;
     protected Grid grid;
     protected Operations o;
-
-
     private CurrentUserSingleton data;
 
     public HomepageController() {
@@ -50,15 +49,19 @@ public class HomepageController {
         } catch (FileNotFoundException e) {
             noConnectionToDatabase.setText("No connection to database");
         }
-
     }
     @FXML
-    public void homeButtonPressed(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void homeButtonPressed(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
+            System.out.println(root);
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            noConnectionToDatabase.setText("Could not retrive the page");
+        }
     }
     @FXML
     public void filmButtonPressed(){
@@ -69,25 +72,35 @@ public class HomepageController {
         grid.gridLoader(o.getTvShow());
     }
     @FXML
-    public void genreButtonPressed(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(App.class.getResource("/fxml/GenrePage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void genreButtonPressed(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/GenrePage.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            returnNullList();
+            noConnectionToDatabase.setText("Could not retrive the page");
+        }
     }
     @FXML
     public void minListeButtonPressed(){
         grid.gridLoader(o.getMyList());
     }
     @FXML
-    public void accountButtonPressedHomePage(ActionEvent event) throws IOException {
+    public void accountButtonPressedHomePage(ActionEvent event) {
         data.getUser().saveMyList();
-        root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            returnNullList();
+            noConnectionToDatabase.setText("Could not retrive the page");
+        }
     }
     @FXML
     public void searching(){
@@ -98,5 +111,9 @@ public class HomepageController {
             grid.gridLoader(e.getEmptyList());
             noResultsFound.setText(e.getMessage());
         }
+    }
+
+    protected void returnNullList() {
+        grid.gridLoader(Collections.emptyList());
     }
 }

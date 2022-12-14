@@ -9,7 +9,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -27,7 +26,7 @@ public class LoginController {
     }
 
     @FXML
-    public void accountButtonPressed(ActionEvent event) throws IOException {
+    public void accountButtonPressed(ActionEvent event) {
 
             String accountButtonID = ((Button)event.getSource()).getId();
             if(accountButtonID.equals("AccountButtonLoginPage1")) {
@@ -38,11 +37,15 @@ public class LoginController {
 
             }
 
-        root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            //noConnectionToDatabase.setText("Could not retrive the page");
+        }
 
 
     }

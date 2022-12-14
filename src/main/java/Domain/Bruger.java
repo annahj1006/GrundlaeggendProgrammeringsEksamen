@@ -44,23 +44,13 @@ public class Bruger {
         return false;
     }
 
-    /*public List<Media> loadMyList() {
-        List<Media> temp = new ArrayList<>();
-        Operations o = new Operations();
-        if(!(o.instantiateMedia(daAccess) == null)) {
-            return o.instantiateMedia(daAccess);
-        }
-        return temp;
-    }*/
-
-
     // Edits the users favorit list from objects to strings and calls the method saveMyList in MediaData
     public void saveMyList() {
         List<String> x = new ArrayList<>();
 
         for(Media m : fav) {
             x.add(m.toString());
-            System.out.println(m.toString());
+            //System.out.println(m.toString());
         }
         daAccess.saveMyList(x);
     }

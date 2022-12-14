@@ -9,6 +9,7 @@ public class TVshow extends Media{
         super(id, title, releaseYear, genre, rating, poster);
         episodes = seriesEpisodes;
     }
+    // Returns the series and episodes
     public String getSeriesEpisodes() {
         String temp = "";
         for (Map.Entry<String, String> pair : episodes.entrySet()) {

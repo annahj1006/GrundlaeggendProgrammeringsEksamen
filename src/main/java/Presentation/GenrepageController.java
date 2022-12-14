@@ -1,14 +1,9 @@
 package Presentation;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
-
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
 
 public class GenrepageController extends HomepageController {
 
@@ -26,11 +21,11 @@ public class GenrepageController extends HomepageController {
     }
 
     @FXML
-    public void homeButtonPressed(ActionEvent event) throws IOException {
+    public void homeButtonPressed(ActionEvent event) {
         super.homeButtonPressed(event);
     }
     @FXML
-    public void accountButtonPressed(ActionEvent event) throws IOException {
+    public void accountButtonPressed(ActionEvent event)  {
         super.accountButtonPressedHomePage(event);
     }
     @FXML
