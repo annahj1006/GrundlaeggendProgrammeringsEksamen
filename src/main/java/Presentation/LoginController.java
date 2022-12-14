@@ -16,8 +16,6 @@ import java.io.IOException;
 
 public class LoginController {
 
-    @FXML
-    private Text noUserException;
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -29,7 +27,7 @@ public class LoginController {
     }
 
     @FXML
-    public void accountButtonPressed(ActionEvent event) throws IOException, NullPointerException {
+    public void accountButtonPressed(ActionEvent event) throws IOException {
 
             String accountButtonID = ((Button)event.getSource()).getId();
             if(accountButtonID.equals("AccountButtonLoginPage1")) {

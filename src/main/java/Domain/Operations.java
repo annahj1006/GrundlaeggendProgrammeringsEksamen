@@ -51,7 +51,7 @@ public class Operations extends Instantiate {
     public List<Media> searchByTitle(String keyword) {
         List<Media> temp = new ArrayList<>();
         for (Media media : mix) {
-            if (media.getName().toLowerCase().contains(keyword)) {
+            if (media.getName().toLowerCase().contains(keyword.toLowerCase())) {
                 temp.add(media);
             }
         }
