@@ -25,9 +25,7 @@ public class GenrepageController extends HomepageController {
         super.homeButtonPressed(event);
     }
     @FXML
-    public void accountButtonPressed(ActionEvent event)  {
-        super.accountButtonPressedHomePage(event);
-    }
+    public void accountButtonPressed(ActionEvent event) { super.accountButtonPressedHomePage(event); }
     @FXML
     public void genreButtonPressed(ActionEvent event){
         Button button = (Button) event.getSource();

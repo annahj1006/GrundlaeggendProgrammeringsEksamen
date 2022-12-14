@@ -17,7 +17,7 @@
         <font>
             <Font size="36.0" />
         </font></Text>
-    <Text fx:id="noConnectionToDatabase" fill="WHITE" layoutX="60.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+    <Text fx:id="errorMsgForUser" fill="WHITE" layoutX="60.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
         <font>
             <Font size="36.0" />
         </font></Text>

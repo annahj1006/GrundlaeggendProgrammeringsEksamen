@@ -13,9 +13,10 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class MediaController{
+public class MediaController {
 
     @FXML
     private ImageView mediaImage;
@@ -27,6 +28,7 @@ public class MediaController{
     private Button addToMyListButton;
 
     private Media media;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -37,8 +39,6 @@ public class MediaController{
         data = CurrentUserSingleton.getInstance();
         currentUser = data.getUser();
     }
-
-
 
     public void setMedia(Media media) {
         this.media = media;
@@ -53,15 +53,20 @@ public class MediaController{
 
     @FXML
     public void playButtonPressed(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(App.class.getResource("/fxml/Playpage.fxml"));
-        root = fxmlLoader.load();
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        PlaypageController playpageController = fxmlLoader.getController();
-        playpageController.setMedia(media);
-        stage.setScene(scene);
-        stage.show();
+        //try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(App.class.getResource("/fxml/Playpage.fxml"));
+            root = fxmlLoader.load();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            PlaypageController playpageController = fxmlLoader.getController();
+            playpageController.setMedia(media);
+            stage.setScene(scene);
+            stage.show();
+        //} catch (NullPointerException | IOException | IllegalStateException e) {
+            //System.out.println(e.getCause());
+            //System.out.println("There was an unexcpected error finding this " + media.getId());
+        //}
     }
 
     public void addToMyListButtonPressed() {

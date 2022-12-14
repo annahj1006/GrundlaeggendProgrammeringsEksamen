@@ -4,9 +4,7 @@ import Domain.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -18,49 +16,42 @@ import java.io.IOException;
 import java.util.Collections;
 
 
-public class HomepageController {
+public class HomepageController extends LoginController {
     @FXML
     private GridPane mediaGrid;
     @FXML
     private TextField SearchBar1;
-    @FXML
-    private Button addToMyListButton;
-    @FXML
-    private Text noResultsFound;
-    @FXML
-    private Text noConnectionToDatabase;
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
+    @FXML
+    protected Text errorMsgForUser;
     protected Grid grid;
     protected Operations o;
-    private CurrentUserSingleton data;
 
     public HomepageController() {
-        data = CurrentUserSingleton.getInstance();
+        super();
+        try {
+            o = new Operations();
+
+        } catch (FileNotFoundException e) {
+            errorMsgForUser.setText("No connection to database");
+        }
     }
     @FXML
     public void initialize(){
-        try {
-            o = new Operations();
-            grid = new Grid(mediaGrid);
-            grid.gridLoader(o.getMix());
-        } catch (FileNotFoundException e) {
-            noConnectionToDatabase.setText("No connection to database");
-        }
+        grid = new Grid(mediaGrid);
+        grid.gridLoader(o.getMix());
     }
     @FXML
     public void homeButtonPressed(ActionEvent event) {
         try {
             root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
-            System.out.println(root);
-            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         } catch (NullPointerException | IOException e) {
-            noConnectionToDatabase.setText("Could not retrive the page");
+            returnNullList();
+            errorMsgForUser.setText("Could not retrive the page");
         }
     }
     @FXML
@@ -81,7 +72,7 @@ public class HomepageController {
             stage.show();
         } catch (NullPointerException | IOException e) {
             returnNullList();
-            noConnectionToDatabase.setText("Could not retrive the page");
+            errorMsgForUser.setText("Could not retrive the page");
         }
     }
     @FXML
@@ -99,20 +90,19 @@ public class HomepageController {
             stage.show();
         } catch (NullPointerException | IOException e) {
             returnNullList();
-            noConnectionToDatabase.setText("Could not retrive the page");
+            errorMsgForUser.setText("Could not logout");
         }
     }
     @FXML
     public void searching(){
         try {
             grid.gridLoader(o.search(SearchBar1.getText()));
-            noResultsFound.setText("");
+            errorMsgForUser.setText("");
         } catch (NoResultsFoundException e) {
             grid.gridLoader(e.getEmptyList());
-            noResultsFound.setText(e.getMessage());
+            errorMsgForUser.setText(e.getMessage());
         }
     }
-
     protected void returnNullList() {
         grid.gridLoader(Collections.emptyList());
     }

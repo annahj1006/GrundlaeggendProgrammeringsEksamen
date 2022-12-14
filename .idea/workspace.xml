@@ -6,14 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Fixet søge funktion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/MediaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/TVshow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/GenrepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/MediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/PlaypageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/Playpage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2HzMrhl9Qa8LZVsxGKOFvc1wbOG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -125,13 +129,6 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
-    </task>
-    <task id="LOCAL-00012" summary="number 9">
-      <created>1669297681832</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1669297681832</updated>
     </task>
     <task id="LOCAL-00013" summary="Pages design">
       <created>1669298199377</created>
@@ -469,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671009977641</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Fixet søge funktion">
+      <created>1671015612533</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1671015612535</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,5 +559,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GrundlaeggendProgrammeringsEksamen$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1671017802530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Presentation.*</FILTER>
+    </SUITE>
   </component>
 </project>

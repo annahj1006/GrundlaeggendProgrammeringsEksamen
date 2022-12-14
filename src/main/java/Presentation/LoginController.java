@@ -9,24 +9,27 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.io.IOException;
 
 
 public class LoginController {
 
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
+    @FXML
+    private Text noUserException;
+    protected Stage stage;
+    protected Scene scene;
+    protected Parent root;
 
-    private CurrentUserSingleton data;
+    protected CurrentUserSingleton data;
 
     public LoginController() {
         data = CurrentUserSingleton.getInstance();
     }
 
     @FXML
-    public void accountButtonPressed(ActionEvent event) {
+    public void accountButtonPressed(ActionEvent event) throws IOException {
 
             String accountButtonID = ((Button)event.getSource()).getId();
             if(accountButtonID.equals("AccountButtonLoginPage1")) {
@@ -44,7 +47,7 @@ public class LoginController {
             stage.setScene(scene);
             stage.show();
         } catch (NullPointerException | IOException e) {
-            //noConnectionToDatabase.setText("Could not retrive the page");
+            noUserException.setText("Could not retrive the page");
         }
 
 

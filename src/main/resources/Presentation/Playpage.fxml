@@ -13,6 +13,10 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #2e2e2e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.PlaypageController">
+   <Text fx:id="errorMsgForUser" fill="WHITE" layoutX="250.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+      <font>
+         <Font size="36.0" />
+      </font></Text>
    <children>
       <Button fx:id="AccountButton1" layoutX="943.0" layoutY="34.0" mnemonicParsing="false" onAction="#accountButtonPressedHomePage" prefHeight="41.0" prefWidth="42.0" style="-fx-opacity: 0;" text="Account" textFill="TRANSPARENT" />
       <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="944.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">

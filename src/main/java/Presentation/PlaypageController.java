@@ -26,29 +26,39 @@ public class PlaypageController {
     private Text rating;
     @FXML
     private Text seasons;
+    @FXML
+    private Text errorMsgForUser;
 
     private Stage stage;
     private Scene scene;
     private Parent root;
     private Media media;
 
-
-
     @FXML
-    public void homeButtonPressed(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void homeButtonPressed(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            System.out.println("1");
+            errorMsgForUser.setText("Could not retrive the page");
+        }
     }
     @FXML
-    public void accountButtonPressedHomePage(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void accountButtonPressedHomePage(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            System.out.println("2");
+            errorMsgForUser.setText("Could not logout");
+        }
     }
     public void setMedia(Media media) {
         this.media = media;
