@@ -21,3 +21,4 @@ public class CurrentUserSingleton {
         return this.user;
     }
 }
+

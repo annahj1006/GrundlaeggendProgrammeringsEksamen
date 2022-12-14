@@ -34,7 +34,7 @@ public class GenrepageController extends HomepageController {
         super.accountButtonPressedHomePage(event);
     }
     @FXML
-    public void genreButtonPressed(ActionEvent event) throws FileNotFoundException {
+    public void genreButtonPressed(ActionEvent event){
         Button button = (Button) event.getSource();
         grid.gridLoader(o.searchByGenre(button.getText().toLowerCase()));
         chosenGenre.setText(button.getText());

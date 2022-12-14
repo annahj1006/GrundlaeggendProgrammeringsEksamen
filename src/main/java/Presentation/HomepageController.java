@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
@@ -14,14 +15,15 @@ import javafx.scene.text.Text;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class HomepageController {
     @FXML
     private GridPane mediaGrid;
     @FXML
     private TextField SearchBar1;
+    @FXML
+    private Button addToMyListButton;
     @FXML
     private Text noResultsFound;
     @FXML
@@ -45,7 +47,7 @@ public class HomepageController {
             o = new Operations();
             grid = new Grid(mediaGrid);
             grid.gridLoader(o.getMix());
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             noConnectionToDatabase.setText("No connection to database");
         }
 
@@ -60,12 +62,10 @@ public class HomepageController {
     }
     @FXML
     public void filmButtonPressed(){
-        grid = new Grid(mediaGrid);
         grid.gridLoader(o.getMovies());
     }
     @FXML
     public void serierButtonPressed(){
-        grid = new Grid(mediaGrid);
         grid.gridLoader(o.getTvShow());
     }
     @FXML
@@ -78,7 +78,6 @@ public class HomepageController {
     }
     @FXML
     public void minListeButtonPressed(){
-        grid = new Grid(mediaGrid);
         grid.gridLoader(o.getMyList());
     }
     @FXML
@@ -93,7 +92,6 @@ public class HomepageController {
     @FXML
     public void searching(){
         try {
-            grid = new Grid(mediaGrid);
             grid.gridLoader(o.search(SearchBar1.getText()));
             noResultsFound.setText("");
         } catch (NoResultsFoundException e) {

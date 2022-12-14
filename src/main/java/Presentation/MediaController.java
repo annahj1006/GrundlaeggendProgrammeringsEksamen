@@ -38,6 +38,8 @@ public class MediaController{
         currentUser = data.getUser();
     }
 
+
+
     public void setMedia(Media media) {
         this.media = media;
         if (media.getId().equals("movie")){

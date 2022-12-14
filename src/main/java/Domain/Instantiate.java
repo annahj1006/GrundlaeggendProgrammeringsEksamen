@@ -27,10 +27,8 @@ public class Instantiate {
         movies = instantiateMedia(new MediaData("src/main/resources/Data/film.txt", "src/main/resources/Data/filmplakater"));
         tvShow = instantiateMedia(new MediaData("src/main/resources/Data/serier.txt", "src/main/resources/Data/serieforsider"));
 
-
         mix = getCombinedMediaList();
         genreList = instantiateGenre();
-
     }
 
     // instantiateMedia takes a MediaData object as an argument and
@@ -91,9 +89,9 @@ public class Instantiate {
         for(Media tvShow : tvShow) {
             temp.add(tvShow);
         }
-        /*for(Media media : temp) {
-            Collections.sort(temp, (p1, p2) -> p1.getName().compareTo(p2.getName()));
-        }*/
+
+        Collections.sort(temp, (p1, p2) -> p1.getName().compareTo(p2.getName()));
+
         return temp;
     }
 
