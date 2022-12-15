@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Lavet junit tests til Operation/Instatiate og Bruger">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/BrugerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/BrugerTest.java" afterDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Sletning af eksempel">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/serier.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/serier.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +17,6 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -29,15 +26,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/Presentation/App.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/Presentation/Grid.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Presentation/HomepageController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2HzMrhl9Qa8LZVsxGKOFvc1wbOG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -58,24 +51,21 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "/Users/nusers/IdeaProjects/GrundlaeggendProgrammeringsEksamen/target/classes/fxml",
+    "last_opened_file_path": "C:/Users/annah/IdeaProjects/Grundl-ggendeProgrammeringEksamenE/target/classes/fxml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45938748",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.testRunning"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target/classes/fxml" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\fxml" />
+      <recent name="$PROJECT_DIR$/target/classes/fxml" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Images" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Presentation" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\Presentation" />
@@ -85,110 +75,28 @@
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\target\classes\fxml" />
       <recent name="C:\Users\annah\IdeaProjects\Grundl-ggendeProgrammeringEksamenE\src\main\resources\Presentation" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Presentation" />
       <recent name="" />
       <recent name="com.example.grundlggendeprogrammeringeksamene" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="Test" />
-      <recent name="Domain" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Domain" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.OperationsTest.searchForEmptyList">
-    <configuration name="BrugerTest.addToFavoriteListe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Presentation.Launcher" />
       <module name="Grundl-ggendeProgrammeringEksamenE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Test.*" />
+          <option name="PATTERN" value="Presentation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.BrugerTest" />
-      <option name="METHOD_NAME" value="addToFavoriteListe" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BrugerTest.mediaExistsInFavoriteList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Grundl-ggendeProgrammeringEksamenE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.BrugerTest" />
-      <option name="METHOD_NAME" value="mediaExistsInFavoriteList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BrugerTest.removeFromFavoriteLise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Grundl-ggendeProgrammeringEksamenE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.BrugerTest" />
-      <option name="METHOD_NAME" value="removeFromFavoriteLise" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OperationsTest.searchByTitle_SmallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Grundl-ggendeProgrammeringEksamenE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.OperationsTest" />
-      <option name="METHOD_NAME" value="searchByTitle_SmallTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OperationsTest.searchForEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Grundl-ggendeProgrammeringEksamenE" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.OperationsTest" />
-      <option name="METHOD_NAME" value="searchForEmptyList" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OperationsTest.searchForEmptyList" />
-        <item itemvalue="JUnit.BrugerTest.addToFavoriteListe" />
-        <item itemvalue="JUnit.BrugerTest.removeFromFavoriteLise" />
-        <item itemvalue="JUnit.OperationsTest.searchByTitle_SmallTest" />
-        <item itemvalue="JUnit.BrugerTest.mediaExistsInFavoriteList" />
+        <item itemvalue="Application.Launcher" />
       </list>
     </recent_temporary>
   </component>
@@ -209,6 +117,48 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
+    </task>
+    <task id="LOCAL-00011" summary="redigeret i datafil">
+      <created>1669295556846</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669295556846</updated>
+    </task>
+    <task id="LOCAL-00012" summary="number 9">
+      <created>1669297681832</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669297681832</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Pages design">
+      <created>1669298199377</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669298199377</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changes in MovieData">
+      <created>1669327611232</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327611232</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Changes in MovieData">
+      <created>1669363229115</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669363229116</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Changes in MovieData">
+      <created>1669385192131</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669385192137</updated>
     </task>
     <task id="LOCAL-00017" summary="Changes in Media &#10;- Linked images with the rest of the movie data">
       <created>1669390926192</created>
@@ -483,77 +433,35 @@
       <option name="project" value="LOCAL" />
       <updated>1670934879937</updated>
     </task>
-    <task id="LOCAL-00056" summary="Checked for places to use exceptions">
-      <created>1670966785197</created>
+    <task id="LOCAL-00056" summary="Playpage virker">
+      <created>1670947958099</created>
       <option name="number" value="00056" />
       <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
-      <updated>1670966785201</updated>
+      <updated>1670947958099</updated>
     </task>
-    <task id="LOCAL-00057" summary="Made some exceptions work">
-      <created>1670975664384</created>
+    <task id="LOCAL-00057" summary="fejl fjernet">
+      <created>1670948067799</created>
       <option name="number" value="00057" />
       <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
-      <updated>1670975664386</updated>
+      <updated>1670948067799</updated>
     </task>
-    <task id="LOCAL-00058" summary="Made some exceptions work">
-      <created>1670975996537</created>
+    <task id="LOCAL-00058" summary="Smårettelser">
+      <created>1670950686352</created>
       <option name="number" value="00058" />
       <option name="presentableId" value="LOCAL-00058" />
       <option name="project" value="LOCAL" />
-      <updated>1670975996539</updated>
+      <updated>1670950686352</updated>
     </task>
-    <task id="LOCAL-00059" summary="Made some exceptions work">
-      <created>1670981945913</created>
+    <task id="LOCAL-00059" summary="Sletning af eksempel">
+      <created>1671116452886</created>
       <option name="number" value="00059" />
       <option name="presentableId" value="LOCAL-00059" />
       <option name="project" value="LOCAL" />
-      <updated>1670981945914</updated>
+      <updated>1671116452887</updated>
     </task>
-    <task id="LOCAL-00060" summary="Fixet søge funktion">
-      <created>1671009977638</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1671009977641</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Fixet søge funktion">
-      <created>1671015612533</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1671015612535</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Fuck det her">
-      <created>1671027400936</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1671027400939</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Fuck det her">
-      <created>1671035130440</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1671035130444</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Fuck det her">
-      <created>1671054459819</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1671054459821</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Lavet junit tests til Operation/Instatiate og Bruger">
-      <created>1671068936012</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1671068936021</updated>
-    </task>
-    <option name="localTasksCounter" value="66" />
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,6 +503,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Program running" />
     <MESSAGE value="12:48" />
     <MESSAGE value="Trying grid" />
     <MESSAGE value="Grid virker, scroll gør ikke :(" />
@@ -614,13 +523,12 @@
     <MESSAGE value="Working on fav List" />
     <MESSAGE value="Working on fav List and correcting a few mistakes" />
     <MESSAGE value="Made comments in Data and Domain" />
-    <MESSAGE value="Playpage virker" />
     <MESSAGE value="Checked for places to use exceptions" />
-    <MESSAGE value="Made some exceptions work" />
-    <MESSAGE value="Fixet søge funktion" />
-    <MESSAGE value="Fuck det her" />
-    <MESSAGE value="Lavet junit tests til Operation/Instatiate og Bruger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lavet junit tests til Operation/Instatiate og Bruger" />
+    <MESSAGE value="Playpage virker" />
+    <MESSAGE value="fejl fjernet" />
+    <MESSAGE value="Smårettelser" />
+    <MESSAGE value="Sletning af eksempel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sletning af eksempel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -635,14 +543,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GrundlaeggendProgrammeringsEksamen$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1671017802530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Presentation.*</FILTER>
-    </SUITE>
   </component>
 </project>
