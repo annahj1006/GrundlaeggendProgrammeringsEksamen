@@ -11,8 +11,7 @@ import org.junit.Test;
 
 import java.io.FileNotFoundException;
 import java.util.Arrays;
-import java.util.List;
-import java.util.ArrayList;
+
 
 
 import static org.junit.Assert.*;
@@ -41,8 +40,10 @@ public class BrugerTest {
     // Checking if the users favorite list is correct after adding elements.
     @Test
     public void addToFavoriteListe() {
-        Media toAdd0 = new Movie("movie", "12 Angry Men", "1957", "Crime, Drama", "8,9", "src/main/resources/Data/filmplakater/12 Angry Men.JPG");
-        Media toAdd1 = new Movie("movie", "2001 A Space Odyssey", "1968", "Adventure, Sci-fi", "8,3", "src/main/resources/Data/filmplakater/2001 A Space Odyssey.JPG");
+        Media toAdd0 = new Movie("movie", "12 Angry Men", "1957", "Crime, Drama",
+                "8,9", "src/main/resources/Data/filmplakater/12 Angry Men.JPG");
+        Media toAdd1 = new Movie("movie", "2001 A Space Odyssey", "1968", "Adventure, Sci-fi",
+                "8,3", "src/main/resources/Data/filmplakater/2001 A Space Odyssey.JPG");
         nyBruger.addMedia(toAdd0);
         nyBruger.addMedia(toAdd1);
         assertEquals(Arrays.asList(toAdd0, toAdd1), nyBruger.getMyList());
@@ -51,8 +52,10 @@ public class BrugerTest {
     // Checkinf if the users favorite list is correct after removing one element
     @Test
     public void removeFromFavoriteLise() {
-        Media toAdd0 = new Movie("movie", "12 Angry Men", "1957", "Crime, Drama", "8,9", "src/main/resources/Data/filmplakater/12 Angry Men.JPG");
-        Media toAdd1 = new Movie("movie", "2001 A Space Odyssey", "1968", "Adventure, Sci-fi", "8,3", "src/main/resources/Data/filmplakater/2001 A Space Odyssey.JPG");
+        Media toAdd0 = new Movie("movie", "12 Angry Men", "1957", "Crime, Drama",
+                "8,9", "src/main/resources/Data/filmplakater/12 Angry Men.JPG");
+        Media toAdd1 = new Movie("movie", "2001 A Space Odyssey", "1968", "Adventure, Sci-fi",
+                "8,3", "src/main/resources/Data/filmplakater/2001 A Space Odyssey.JPG");
         nyBruger.addMedia(toAdd0);
         nyBruger.addMedia(toAdd1);
         nyBruger.removeMedia(toAdd0);
@@ -62,8 +65,10 @@ public class BrugerTest {
 
     @Test
     public void mediaExistsInFavoriteList() {
-        Media toAdd0 = new Movie("movie", "12 Angry Men", "1957", "Crime, Drama", "8,9", "src/main/resources/Data/filmplakater/12 Angry Men.JPG");
-        Media toAdd1 = new Movie("movie", "2001 A Space Odyssey", "1968", "Adventure, Sci-fi", "8,3", "src/main/resources/Data/filmplakater/2001 A Space Odyssey.JPG");
+        Media toAdd0 = new Movie("movie", "12 Angry Men", "1957", "Crime, Drama",
+                "8,9", "src/main/resources/Data/filmplakater/12 Angry Men.JPG");
+        Media toAdd1 = new Movie("movie", "2001 A Space Odyssey", "1968", "Adventure, Sci-fi",
+                "8,3", "src/main/resources/Data/filmplakater/2001 A Space Odyssey.JPG");
         nyBruger.addMedia(toAdd0);
         nyBruger.addMedia(toAdd1);
         assertEquals(true, nyBruger.mediaExsists(toAdd0));

@@ -30,6 +30,7 @@ public class Instantiate {
         mix = getCombinedMediaList();
         genreList = instantiateGenre();
 
+
     }
 
     // instantiateMedia takes a MediaData object as an argument and
@@ -51,9 +52,13 @@ public class Instantiate {
         // Makes objects from the string of data given from the MediaData object
         for(String mediaData : media) {
             Map<String, String> tempMap = new HashMap<>();
+
+            if(mediaData.charAt(mediaData.length()-1) == ' ') {
+                mediaData = mediaData.substring(0, mediaData.length()-2);
+            }
+
             // Splitting our movie data and storing it in separate variables for easier readability
             String[] elements = mediaData.split(";");
-
             String title = elements[0];
             String releaseYear = elements[1].substring(1, elements[1].length());
             String genre = elements[2].substring(1, elements[2].length());
@@ -104,14 +109,22 @@ public class Instantiate {
             String tempString = m.getGenre().replace(" ", "").toLowerCase();
             String[] genreArray = tempString.split(",");
             for(String genre : genreArray) {
-
                 if(!(temp.contains(genre))) {
                     temp.add(genre);
                 }
             }
         }
-
         return temp;
+        // Wrong code check unit test
+        /*for(Media m : mix) {
+            String[] genreArray = m.getGenre().split(", ");
+            for(String genre : genreArray) {
+                if(!(temp.contains(genre))) {
+                    temp.add(genre.toLowerCase());
+                }
+            }
+        }*/
+
     }
 
 }

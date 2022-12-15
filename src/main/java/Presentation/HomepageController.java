@@ -26,23 +26,13 @@ public class HomepageController extends LoginController {
     protected Text errorMsgForUser;
     protected Grid grid;
 
-
-
     public HomepageController() {
         super();
-            /*try {
-                o = new Operations();
-                System.out.println("1");
-            } catch (FileNotFoundException e) {
-                noUserException.setText("No connection to database");
-            }*/
-
     }
     @FXML
     public void initialize(){
-
         grid = new Grid(mediaGrid);
-        grid.gridLoader(o.getMix());
+        grid.gridLoader(super.o.getMix());
     }
     @FXML
     public void homeButtonPressed(ActionEvent event) {

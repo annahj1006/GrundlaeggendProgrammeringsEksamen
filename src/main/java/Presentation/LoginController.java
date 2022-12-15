@@ -48,7 +48,7 @@ public class LoginController {
         try {
             try {
                 o = new Operations();
-            } catch (FileNotFoundException e) {
+            } catch (IOException e) {
                 errorMsgException.setText("No connection to database");
             }
             root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
