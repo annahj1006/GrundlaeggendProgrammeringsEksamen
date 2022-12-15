@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Smårettelser">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/grundlggendeprogrammeringeksamene/hello-view.fxml" beforeDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Sletning af eksempel">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/serier.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/serier.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,13 +117,6 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
-    </task>
-    <task id="LOCAL-00010" summary="redigeret i datafil">
-      <created>1669295417724</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1669295417724</updated>
     </task>
     <task id="LOCAL-00011" summary="redigeret i datafil">
       <created>1669295556846</created>
@@ -462,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670950686352</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Sletning af eksempel">
+      <created>1671116452886</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1671116452887</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +503,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Program running" />
     <MESSAGE value="12:48" />
     <MESSAGE value="Trying grid" />
@@ -529,7 +527,8 @@
     <MESSAGE value="Playpage virker" />
     <MESSAGE value="fejl fjernet" />
     <MESSAGE value="Smårettelser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Smårettelser" />
+    <MESSAGE value="Sletning af eksempel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sletning af eksempel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
