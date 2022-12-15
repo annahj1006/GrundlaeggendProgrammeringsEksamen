@@ -33,7 +33,6 @@ public class MediaData {
            }
 
            scan.close();
-
            return media;
        } else {
            throw new FileNotFoundException("No connection to database.");

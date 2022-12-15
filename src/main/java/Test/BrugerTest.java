@@ -10,7 +10,6 @@ import org.junit.Test;
 
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ public class BrugerTest {
     private Bruger nyBruger;
 
     @Before
-    public void setup() throws IOException {
+    public void setup() throws FileNotFoundException {
         o = new Operations();
         nyBruger = new Bruger("Oliver");
     }

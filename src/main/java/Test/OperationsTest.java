@@ -5,19 +5,17 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.ArrayList;
 
+import java.io.FileNotFoundException;
+import java.util.Collections;
 import static org.junit.Assert.*;
 
 public class OperationsTest {
     private Operations o;
     @Before
-    public void setup() throws IOException {
+    public void setup() throws FileNotFoundException {
          o = new Operations();
     }
     @After
@@ -44,12 +42,14 @@ public class OperationsTest {
     }
 
     // Checking if all the genres are saved in a list
-    /*@Test
+    @Test
     public void CheckGenreList() {
-        assertEquals(Arrays.asList("action", "adventure", "drama", "romance", "comedy", "family", "fantasy", "animation",
-                "musical", "music", "mystery", "crime", "sci-fi", , , "horror",
-                "thriller", "war", "western", "film-Noir", "history", "biography", "sport"), o.getGenre());
-    } */
+        List<String> temp = o.getGenre();
+        Collections.sort(temp);
+        assertEquals(Arrays.asList("action", "adventure", "animation", "biography", "comedy", "crime", "drama", "family", "fantasy",
+                "film-Noir", "history", "horror", "music", "musical", "mystery", "romance", "sci-fi", "sport",
+                "thriller", "war", "western"), temp);
+    }
 
     // Checking if the search by keyword (searchByTitle-method) works, with a small result
     @Test
