@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class PlaypageController{
+public class PlaypageController {
     @FXML
     private ImageView playScreen;
     @FXML
@@ -26,6 +26,8 @@ public class PlaypageController{
     private Text rating;
     @FXML
     private Text seasons;
+    @FXML
+    private Text errorMsgForUser;
 
     private Stage stage;
     private Scene scene;
@@ -33,28 +35,38 @@ public class PlaypageController{
     private Media media;
 
     @FXML
-    public void homeButtonPressed(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void homeButtonPressed(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/HomePage.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            System.out.println("1");
+            errorMsgForUser.setText("Could not retrive the page");
+        }
     }
     @FXML
-    public void accountButtonPressedHomePage(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
-        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void accountButtonPressedHomePage(ActionEvent event) {
+        try {
+            root = FXMLLoader.load(App.class.getResource("/fxml/LoginPage.fxml"));
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (NullPointerException | IOException e) {
+            System.out.println("2");
+            errorMsgForUser.setText("Could not logout");
+        }
     }
-    public void setMedia(Media media){
+    public void setMedia(Media media) {
         this.media = media;
         mediaTitle.setText(media.getName() + " (" + media.getReleaseYear() + ")");
         genreText.setText("Genres: " + media.getGenre());
         rating.setText("Rating: " + media.getRating());
 
-        if(media instanceof TVshow){
+        if(media.getId().equals("tvShow")) {
             seasons.setText("Episodes: " + ((TVshow) media).getSeriesEpisodes());
         }
     }

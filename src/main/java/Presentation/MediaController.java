@@ -13,9 +13,10 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class MediaController{
+public class MediaController {
 
     @FXML
     private ImageView mediaImage;
@@ -27,6 +28,7 @@ public class MediaController{
     private Button addToMyListButton;
 
     private Media media;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -40,13 +42,13 @@ public class MediaController{
 
     public void setMedia(Media media) {
         this.media = media;
-        if (media instanceof Movie){
+        if (media.getId().equals("movie")){
             mediaImage.setImage(new Image("file:src/main/resources/Data/filmplakater/" + media.getPoster() + ".jpg"));
         } else {
             mediaImage.setImage(new Image("file:src/main/resources/Data/serieforsider/" + media.getPoster() + ".jpg"));
         }
         mediaTitle.setText(media.getName());
-
+        addToMyListButton.setText(media.getAddedState());
     }
 
     @FXML
@@ -62,17 +64,16 @@ public class MediaController{
         stage.show();
     }
 
+    @FXML
     public void addToMyListButtonPressed() {
-        try {
-            if(!(currentUser.mediaExsists(media))) {
-                currentUser.addMedia(media);
-                addToMyListButton.setText("-");
-            } else {
-                currentUser.removeMedia(media);
-                //addToMyListButton.setText("+");
-            }
-        } catch (NullPointerException e) {
-            System.out.println("No user found");
+        if(currentUser.mediaExsists(media)) {
+            currentUser.removeMedia(media);
+            media.setAddedState("+");
+            addToMyListButton.setText(media.getAddedState());
+        } else {
+            currentUser.addMedia(media);
+            media.setAddedState("-");
+            addToMyListButton.setText(media.getAddedState());
         }
     }
 }

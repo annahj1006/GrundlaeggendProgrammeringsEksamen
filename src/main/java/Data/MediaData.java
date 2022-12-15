@@ -52,31 +52,9 @@ public class MediaData {
             }
             return posters;
         } else {
-            System.out.println("No connection found");
             throw new FileNotFoundException("No connection to database.");
-
         }
     }
-
-    // loadMyList loads the current users favorite list and returns it in a list of strings
-    /*public List<String> loadMyList(String path, String name) {
-        List<String> favoriteList = new ArrayList<>();
-
-            File file = new File(path + "/" + name);
-            if(file.exists()) {
-                Scanner scan = new Scanner(file);
-
-                while (scan.hasNextLine()) {
-                    favoriteList.add(scan.nextLine());
-                }
-                scan.close();
-
-                return favoriteList;
-            } else {
-                //throw new FileNotFoundException("No favorite list found");
-                return favoriteList();
-            }
-    }*/
 
     // The saveMyList function takes a favorite list and a name and save the list in a txt file with the specified name
     public void saveMyList(List<String> favoritMediaList) {

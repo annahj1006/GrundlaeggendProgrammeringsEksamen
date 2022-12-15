@@ -28,7 +28,7 @@ public class Operations extends Instantiate {
             return searchByGenre(searchWord);
         } else {
             if(searchByTitle(word).size() == 0) {
-                throw new NoResultsFoundException();
+                throw new NoResultsFoundException(searchByTitle(word));
             } else {
                 return searchByTitle(word);
             }
@@ -51,14 +51,14 @@ public class Operations extends Instantiate {
     public List<Media> searchByTitle(String keyword) {
         List<Media> temp = new ArrayList<>();
         for (Media media : mix) {
-            if (media.getName().toLowerCase().contains(keyword)) {
+            if (media.getName().toLowerCase().contains(keyword.toLowerCase())) {
                 temp.add(media);
             }
         }
         return temp;
     }
 
-    // Returns different list so they can be accessed by different parts of the program.
+    // Returns different list, so they can be accessed by different parts of the program.
     public List<Media> getMyList() { return currentUser.getMyList(); }
     public List<Media> getMovies() {
         return movies;
@@ -67,4 +67,7 @@ public class Operations extends Instantiate {
         return tvShow;
     }
     public List<Media> getMix() {return mix;}
+
+    // For junit testing
+    public List<String> getGenre() { return genreList; }
 }

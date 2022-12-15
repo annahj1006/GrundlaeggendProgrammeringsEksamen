@@ -7,6 +7,7 @@ public class Media {
     protected String genre;
     protected String rating;
     protected String poster;
+    private String addedState;
     public Media(String id, String title, String releaseYear, String genre, String rating, String poster) {
         this.id = id;
         this.title = title;
@@ -14,6 +15,7 @@ public class Media {
         this.genre = genre;
         this.rating = rating;
         this.poster = poster;
+        addedState = "+";
     }
     public String getId() {
         return id;
@@ -29,6 +31,12 @@ public class Media {
     }
     public String getRating() { return rating; }
     public String getPoster() { return poster; }
+    public void setAddedState(String newState) {
+        addedState = newState;
+    }
+    public String getAddedState() {
+        return addedState;
+    }
     public String toString() {
         return (getName() + "; " + getReleaseYear() + "; " + getGenre() + "; ");
     }

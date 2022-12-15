@@ -38,21 +38,13 @@ public class Bruger {
 
     // Checks if a movie/series already is a part of the users favorite list
     public boolean mediaExsists(Media media) {
-        if(fav.contains(media)) {
-            return true;
+        for(Media m : fav) {
+            if(m.getName().equals(media.getName())) {
+                return true;
+            }
         }
         return false;
     }
-
-    /*public List<Media> loadMyList() {
-        List<Media> temp = new ArrayList<>();
-        Operations o = new Operations();
-        if(!(o.instantiateMedia(daAccess) == null)) {
-            return o.instantiateMedia(daAccess);
-        }
-        return temp;
-    }*/
-
 
     // Edits the users favorit list from objects to strings and calls the method saveMyList in MediaData
     public void saveMyList() {
@@ -60,7 +52,6 @@ public class Bruger {
 
         for(Media m : fav) {
             x.add(m.toString());
-            System.out.println(m.toString());
         }
         daAccess.saveMyList(x);
     }

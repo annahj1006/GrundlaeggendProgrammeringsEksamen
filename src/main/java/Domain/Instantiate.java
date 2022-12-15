@@ -90,9 +90,9 @@ public class Instantiate {
         for(Media tvShow : tvShow) {
             temp.add(tvShow);
         }
-        /*for(Media media : temp) {
-            Collections.sort(temp, (p1, p2) -> p1.getName().compareTo(p2.getName()));
-        }*/
+
+        Collections.sort(temp, (p1, p2) -> p1.getName().compareTo(p2.getName()));
+
         return temp;
     }
 
@@ -101,13 +101,16 @@ public class Instantiate {
         List<String> temp = new ArrayList<>();
 
         for(Media m : mix) {
-            String[] genreArray = m.getGenre().split(", ");
+            String tempString = m.getGenre().replace(" ", "").toLowerCase();
+            String[] genreArray = tempString.split(",");
             for(String genre : genreArray) {
+
                 if(!(temp.contains(genre))) {
-                    temp.add(genre.toLowerCase());
+                    temp.add(genre);
                 }
             }
         }
+
         return temp;
     }
 

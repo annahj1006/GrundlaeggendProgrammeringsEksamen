@@ -5,29 +5,27 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 public class GenrepageController extends HomepageController {
+
     @FXML
     private Text chosenGenre;
 
-    public GenrepageController() throws FileNotFoundException {
+    public GenrepageController()  {
         super();
+
     }
     @FXML
-    public void initialize()  {
+    public void initialize() {
         super.initialize();
         chosenGenre.setText("All genres");
     }
+
     @FXML
-    public void homeButtonPressed(ActionEvent event) throws IOException {
+    public void homeButtonPressed(ActionEvent event) {
         super.homeButtonPressed(event);
     }
     @FXML
-    public void accountButtonPressed(ActionEvent event) throws IOException {
-        super.accountButtonPressedHomePage(event);
-    }
+    public void accountButtonPressed(ActionEvent event) { super.accountButtonPressedHomePage(event); }
     @FXML
     public void genreButtonPressed(ActionEvent event){
         Button button = (Button) event.getSource();
