@@ -58,7 +58,7 @@ public class Operations extends Instantiate {
         return temp;
     }
 
-    // Returns different list so they can be accessed by different parts of the program.
+    // Returns different list, so they can be accessed by different parts of the program.
     public List<Media> getMyList() { return currentUser.getMyList(); }
     public List<Media> getMovies() {
         return movies;
@@ -67,4 +67,7 @@ public class Operations extends Instantiate {
         return tvShow;
     }
     public List<Media> getMix() {return mix;}
+
+    // For junit testing
+    public List<String> getGenre() { return genreList; }
 }

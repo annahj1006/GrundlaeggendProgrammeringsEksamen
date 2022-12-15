@@ -29,6 +29,7 @@ public class Instantiate {
 
         mix = getCombinedMediaList();
         genreList = instantiateGenre();
+
     }
 
     // instantiateMedia takes a MediaData object as an argument and
@@ -100,13 +101,16 @@ public class Instantiate {
         List<String> temp = new ArrayList<>();
 
         for(Media m : mix) {
-            String[] genreArray = m.getGenre().split(", ");
+            String tempString = m.getGenre().replace(" ", "").toLowerCase();
+            String[] genreArray = tempString.split(",");
             for(String genre : genreArray) {
+
                 if(!(temp.contains(genre))) {
-                    temp.add(genre.toLowerCase());
+                    temp.add(genre);
                 }
             }
         }
+
         return temp;
     }
 

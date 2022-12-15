@@ -5,6 +5,8 @@ module java {
     requires javafx.web;
     requires javafx.graphics;
     requires javafx.media;
+    requires org.junit.jupiter.api;
+    requires junit;
     //requires org.testfx;
     //requires org.testfx.junit;
 

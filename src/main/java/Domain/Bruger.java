@@ -52,7 +52,6 @@ public class Bruger {
 
         for(Media m : fav) {
             x.add(m.toString());
-            //System.out.println(m.toString());
         }
         daAccess.saveMyList(x);
     }

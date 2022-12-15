@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Fuck det her">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Domain/OperationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mavenProjectSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/BrugerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/OperationsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/NoResultsFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/NoResultsFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentation/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Presentation/LoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/OperationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/MediaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/Margrete" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/Margrete" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +30,7 @@
         <option value="FxmlFile" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -60,8 +69,10 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "last_opened_file_path": "/Users/nusers/IdeaProjects/GrundlaeggendProgrammeringsEksamen/target/classes/fxml",
@@ -69,7 +80,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.45938748",
-    "settings.editor.selected.configurable": "preferences.JavaFX"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.testRunning"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -94,26 +105,101 @@
       <recent name="com.example.grundlggendeprogrammeringeksamene" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Test" />
+      <recent name="Domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Domain" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Presentation.Launcher" />
+    <configuration name="BrugerTest.addToFavoriteListe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Grundl-ggendeProgrammeringEksamenE" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Presentation.*" />
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.BrugerTest" />
+      <option name="METHOD_NAME" value="addToFavoriteListe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrugerTest.mediaExistsInFavoriteList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grundl-ggendeProgrammeringEksamenE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.BrugerTest" />
+      <option name="METHOD_NAME" value="mediaExistsInFavoriteList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrugerTest.removeFromFavoriteLise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grundl-ggendeProgrammeringEksamenE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.BrugerTest" />
+      <option name="METHOD_NAME" value="removeFromFavoriteLise" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperationsTest.searchByTitle_SmallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grundl-ggendeProgrammeringEksamenE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.OperationsTest" />
+      <option name="METHOD_NAME" value="searchByTitle_SmallTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OperationsTest.searchForEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Grundl-ggendeProgrammeringEksamenE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.OperationsTest" />
+      <option name="METHOD_NAME" value="searchForEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Launcher" />
+        <item itemvalue="JUnit.OperationsTest.searchByTitle_SmallTest" />
+        <item itemvalue="JUnit.BrugerTest.mediaExistsInFavoriteList" />
+        <item itemvalue="JUnit.BrugerTest.removeFromFavoriteLise" />
+        <item itemvalue="JUnit.BrugerTest.addToFavoriteListe" />
+        <item itemvalue="JUnit.OperationsTest.searchForEmptyList" />
       </list>
     </recent_temporary>
   </component>
@@ -134,13 +220,6 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
-    </task>
-    <task id="LOCAL-00015" summary="Changes in MovieData">
-      <created>1669363229115</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1669363229116</updated>
     </task>
     <task id="LOCAL-00016" summary="Changes in MovieData">
       <created>1669385192131</created>
@@ -478,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671035130444</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Fuck det her">
+      <created>1671054459819</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1671054459821</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
