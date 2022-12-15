@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Fuck det her">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mavenProjectSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/BrugerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test/OperationsTest.java" afterDir="false" />
+    <list default="true" id="96762bb9-9eb3-4ef5-b43f-9981b790a6f4" name="Changes" comment="Lavet junit tests til Operation/Instatiate og Bruger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Bruger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Instantiate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Operations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/OperationsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/MediaTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/Margrete" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/Margrete" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/BrugerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/BrugerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +101,7 @@
       <recent name="Domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.OperationsTest.searchForEmptyList">
     <configuration name="BrugerTest.addToFavoriteListe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Grundl-ggendeProgrammeringEksamenE" />
       <extension name="coverage">
@@ -195,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OperationsTest.searchForEmptyList" />
+        <item itemvalue="JUnit.BrugerTest.addToFavoriteListe" />
+        <item itemvalue="JUnit.BrugerTest.removeFromFavoriteLise" />
         <item itemvalue="JUnit.OperationsTest.searchByTitle_SmallTest" />
         <item itemvalue="JUnit.BrugerTest.mediaExistsInFavoriteList" />
-        <item itemvalue="JUnit.BrugerTest.removeFromFavoriteLise" />
-        <item itemvalue="JUnit.BrugerTest.addToFavoriteListe" />
-        <item itemvalue="JUnit.OperationsTest.searchForEmptyList" />
       </list>
     </recent_temporary>
   </component>
@@ -220,13 +209,6 @@
       <workItem from="1670319066104" duration="22654000" />
       <workItem from="1670439629902" duration="1129000" />
       <workItem from="1670442429619" duration="12778000" />
-    </task>
-    <task id="LOCAL-00016" summary="Changes in MovieData">
-      <created>1669385192131</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1669385192137</updated>
     </task>
     <task id="LOCAL-00017" summary="Changes in Media &#10;- Linked images with the rest of the movie data">
       <created>1669390926192</created>
@@ -564,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671054459821</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Lavet junit tests til Operation/Instatiate og Bruger">
+      <created>1671068936012</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1671068936021</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Program running" />
     <MESSAGE value="12:48" />
     <MESSAGE value="Trying grid" />
     <MESSAGE value="Grid virker, scroll gør ikke :(" />
@@ -631,7 +619,8 @@
     <MESSAGE value="Made some exceptions work" />
     <MESSAGE value="Fixet søge funktion" />
     <MESSAGE value="Fuck det her" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fuck det her" />
+    <MESSAGE value="Lavet junit tests til Operation/Instatiate og Bruger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lavet junit tests til Operation/Instatiate og Bruger" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
